@@ -1,11 +1,5 @@
 @font-face {
-    font-family: "Cabin Sketch";
-    src: url('../fonts/cabinsketch-regular-webfont.ttf') format('truetype'), url('../fonts/cabinsketch-regular-webfont.woff') format('woff'), url('../fonts/cabinsketch-regular-webfont.woff2') format('woff2');
-    font-weight: 400 700;
-  }
-  
-@font-face {
-  font-family: 'Overpass Mono';
+  font-family: 'Overpass';
     src: url('../fonts/overpass_mono/overpass-mono-light-webfont.woff') format('woff'),
           url('../fonts/overpass_mono/overpass-mono-light-webfont.woff2') format('woff2');
   font-weight: 300;
