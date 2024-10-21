@@ -284,16 +284,63 @@ h3 {
 
 /*MENU*/
 
-.navbar {
-  width: 100%;
-}
-
 .nav-container {
   justify-content: space-between;
   align-items: center;
   position: relative;
 
 }
+
+.navbar {
+   position: fixed; 
+   top:0; 
+   left: 0; 
+   width: 100%; 
+   padding: 50px 90px 0px 90px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+   background: #FEF9EE;
+  }
+  
+  .menu-items li {
+      display: inline;
+      margin: 0 10px;
+      font-size: 18px;
+  }
+  
+  .menu-items li a {
+      color: #36454F;
+      text-decoration: none;
+  } 
+
+  .header .headerline { /*FIX TIS!!!!!!!!*/
+    position: fixed;
+    top:0; 
+    left: 0; 
+\
+    margin: 105px 90px 0px 90px;
+    width: 85%;
+    border: none;
+    height: 1px;
+    color:#5C6274;  /* old IE */
+    background-color: #333;
+  }
+
+  @keyframes menu-items {
+    from { text-decoration-color: transparent; }
+    to { text-decoration-color: inherit; }
+  }
+  
+  .menu-items a:hover {
+    text-decoration: line-through;
+    text-decoration-color: #ff2b27;
+    text-decoration-thickness: 2px;
+    animation: menu-items 250ms ease-in-out;
+    }
+
+
 
 .nav-container .checkbox {
   position: absolute;
@@ -380,7 +427,7 @@ h3 {
 
 .mobilemenu li {
   padding: 10px 0;
-}
+} 
 
 /* FOOTER */
 
@@ -458,15 +505,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-  
-  .logo {
-      margin: 0;
-      position: absolute;
-      top: 4.4rem;
-      left: 100px;
-      padding: 0 7px;
-      border-right: 1px solid #36454F;
-  }
 
   .logo a {
       color:#36454F;
@@ -475,35 +513,5 @@ footer {
   
   .logo h3 {
       font-size: 24px;
-  }
-
-  .menu-items {
-      position: absolute;
-      top: 3rem;
-      left: 100px;
-      border-bottom: 2px solid #36454F;
-  }
-  
-  .menu-items li {
-      display: inline;
-      margin: 0 15px;
-      font-size: 2rem;
-  }
-  
-  .menu-items li a {
-      color: #36454F;
-      text-decoration: none;
-  }
-
-@keyframes menu-items {
-  from { text-decoration-color: transparent; }
-  to { text-decoration-color: inherit; }
-}
-
-.menu-items a:hover {
-  text-decoration: line-through;
-  text-decoration-color: #ff2b27;
-  text-decoration-thickness: 2px;
-  animation: menu-items 250ms ease-in-out;
   }
 }
