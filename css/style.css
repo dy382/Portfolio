@@ -1,69 +1,69 @@
 @font-face {
     font-family: 'Averia Serif Libre';
-      src: url('/css/Averia_Serif_Libre/AveriaSerifLibre-Light.woff') format('woff');
+      src: url('../css/Averia_Serif_Libre/AveriaSerifLibre-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Averia Serif Libre';
-      src: url('/css/Averia_Serif_Libre/AveriaSerifLibre-LightItalic.woff') format('woff');
+      src: url('../css/Averia_Serif_Libre/AveriaSerifLibre-LightItalic.woff') format('woff');
       font-weight: 300;
       font-style: italic;
   }
   
   @font-face {
     font-family: 'Averia Serif Libre';
-      src: url('/css/Averia_Serif_Libre/AveriaSerifLibre-Regular.woff') format('woff');
+      src: url('../css/Averia_Serif_Libre/AveriaSerifLibre-Regular.woff') format('woff');
       font-weight: 400;
       font-style: normal;
   }
   
   @font-face {
     font-family: 'Averia Serif Libre';
-      src: url('/css/Averia_Serif_Libre/AveriaSerifLibre-Bold.woff') format('woff');
+      src: url('../css/Averia_Serif_Libre/AveriaSerifLibre-Bold.woff') format('woff');
       font-weight: 700;
       font-style: normal;
   }
   
   @font-face {
     font-family: 'Averia Serif Libre';
-      src: url('/css/Averia_Serif_Libre/AveriaSerifLibre-BoldItalic.woff') format('woff');
+      src: url('../css/Averia_Serif_Libre/AveriaSerifLibre-BoldItalic.woff') format('woff');
       font-weight: 700;
       font-style: italic;
   }
   
   @font-face {
     font-family: 'Overpass';
-      src: url('/css/Overpass/Overpass-Light.woff') format('woff');
+      src: url('../css/Overpass/Overpass-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Overpass';
-      src: url('/css/Overpass/Overpass-LightItalic.woff') format('woff');
+      src: url('../css/Overpass/Overpass-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
   }
   
   @font-face {
     font-family: 'Overpass';
-      src: url('/css/Overpass/Overpass-Regular.woff') format('woff');
+      src: url('../css/Overpass/Overpass-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Overpass';
-      src: url('/css/Overpass/Overpass-Bold.woff') format('woff');
+      src: url('../css/Overpass/Overpass-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Overpass';
-      src: url('/css/Overpass/Overpass-BoldItalic.woff') format('woff');
+      src: url('../css/Overpass/Overpass-BoldItalic.woff') format('woff');
     font-weight: 700;
     font-style: italic;
   }
@@ -134,11 +134,7 @@ p {
 }
 
 #currentPage {
-    color: red;
-}
-
-.underline { 
-    cursor: pointer;
+    color: var(--hovercolor);
 }
 
 .navbar {
@@ -164,3 +160,132 @@ p {
        color: #36454F;
        text-decoration: none;
    } 
+
+
+   .content {
+    margin-top: 100px;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  
+  .content p {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+  }
+
+/* UNDERLINE HOVER ANIMATION*/
+
+.underline {
+  display: inline-block;
+  position: relative;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--hovercolor);
+  transition: transform 0.25s ease-out;
+}
+
+.underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.underline::after {
+  transform-origin: bottom right;
+}
+
+
+/* PROJECT SECTION IN TWO COLUMNS */
+
+.projects {
+    padding-top: 20px;
+  }
+  
+  .projects h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .project-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-item h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .project-item p {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  
+  .project-item a {
+    color: #e60023;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .project-item a:hover {
+    text-decoration: underline;
+  }
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #BE8F60;
+    color: #36454F;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    footer a {
+      width: fit-content;
+      padding: 20px;
+      margin: 1rem;
+      color: white; 
+      display:inline-block; 
+      background: #36454F;
+      padding: 12px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 20px;
+    }
+    
