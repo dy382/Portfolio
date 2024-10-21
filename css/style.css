@@ -133,3 +133,34 @@ p {
     font-size: 15px;
 }
 
+#currentPage {
+    color: red;
+}
+
+.underline { 
+    cursor: pointer;
+}
+
+.navbar {
+    position: fixed; 
+    top:0; 
+    left: 0; 
+    width: 100%; 
+    padding: 50px 90px 0px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #FEF9EE;
+   }
+   
+   .menu-items li {
+       display: inline;
+       margin: 0 10px;
+       font-size: 18px;
+   }
+   
+   .menu-items li a {
+       color: #36454F;
+       text-decoration: none;
+   } 
