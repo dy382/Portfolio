@@ -1,0 +1,92 @@
+#currentPage {
+    color: #FF2B27;
+  }
+
+  #currentpage {
+    color: #FF2B27;
+  }
+  
+  /*index introduction/homepage*/
+  .container {
+    scroll-snap-type: y proximity; /* you can do horizontal scroll with x mandatory */
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+    width: 100%;
+    margin: auto;
+  }
+  
+  section {
+    /* scroll-snap-align: start; */
+    height: 90vh;
+  }
+  
+  .Doyeon {
+    padding: 13rem 0 10rem 0rem;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  
+    .Doyeon h4 {
+      margin-top: 10rem;
+      /* grid-column: 1;
+      grid-row: 3; */
+    }
+  
+    .Doyeon h1 {
+      font-size: 3rem;
+      margin-top: 3rem;
+      padding: 0 10px;
+      border-bottom: 2px solid #36454F;
+      /* grid-column: 1;
+      grid-row: 4; */
+    }
+    
+    /* .Doyeon img { 
+      grid-column: 3 / span 4;
+      grid-row: 1 / span 15;
+    } */
+
+
+  .Hello {
+    color: #36454F;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url("../idm222-images/CoffeeMaker.png");
+    background-repeat: no-repeat;
+    background-position-x: left; */
+
+  }
+
+  .Hello h2 {
+    font-size: 18px;
+  }  
+
+  .ident {
+    margin: 0 0 0 4rem;
+  }
+
+
+  @media (max-width: 900px) { 
+    .Doyeon {
+      padding: 13rem 0 10rem 10rem;
+    }
+
+    .Doyeon h4 {
+      margin-top: 0rem;
+  }
+    
+    .Hello {
+      padding: 0 50px;
+    }
+  }
+
+  @media (min-width: 900px) { 
+    .Hello {
+      padding: 0 500px;
+    }
+  }

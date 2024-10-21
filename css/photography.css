@@ -1,0 +1,160 @@
+
+  /*Photo Page*/
+
+  .phototitle {
+    padding: 4rem 8rem 3rem 8rem;
+  }
+  
+  .phototitle h1 {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 600px) {
+    .phototitle {
+      padding: 50px 3rem 0 3rem;
+    }
+
+    .Photo {
+      padding: 3em 3em 3em 3em;
+    }
+
+    .Photo Img {
+      margin-bottom: 3em; 
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 900px) {
+
+    .Photo {
+      padding: 3em 7em 3em 7em;
+    }
+
+    .Photo Img {
+      margin-bottom: 3em; 
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 900px) and (max-width: 1200px) {
+    
+    .phototitle h1 {
+      margin-bottom: 0;
+    }
+    
+    .Photo Img {
+      width: 15em;
+    }
+
+    .Photo {
+      display: grid;
+      margin-bottom: 3em;
+      grid-template-columns: auto auto auto;
+      gap: 2em 2em;
+      justify-content: center;
+    }
+
+    .photography1 {
+      grid-area: 1 / 1 / 3 / 2;
+    }
+
+    .photography2 {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .photography6 {
+      grid-area: 1 / 3 / 3 / 4;
+    }
+
+    .photography7 {
+      grid-area: 2 / 2 / 4 / 3;
+    }
+
+    .photography10 {
+      grid-area: 4 / 1 / 6 / 2;
+    }
+
+    .photography11 {
+      grid-area: 4 / 3 / 6 / 4;
+    }
+
+    .photography9 {
+      grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .photography5 {
+      grid-area: 4 / 2 / 5 / 3;
+    }
+
+    .photography8 {
+      grid-area: 6 / 3 / 7 / 4;
+    }
+
+    .photography12 {
+      grid-area: 5 / 2 / 7 / 3;
+    }
+
+  }
+  
+  
+  @media (min-width: 1200px) {
+
+    
+    .phototitle h1 {
+      margin-bottom: 0;
+    }
+    
+    .Photo Img {
+      width: 20em;
+    }
+
+    .Photo {
+      display: grid;
+      margin-bottom: 3em;
+      grid-template-columns: auto auto auto;
+      gap: 40px 40px;
+      justify-content: center;
+    }
+
+    .photography1 {
+      grid-area: 1 / 1 / 3 / 2;
+    }
+
+    .photography2 {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .photography6 {
+      grid-area: 1 / 3 / 3 / 4;
+    }
+
+    .photography7 {
+      grid-area: 2 / 2 / 4 / 3;
+    }
+
+    .photography10 {
+      grid-area: 4 / 1 / 6 / 2;
+    }
+
+    .photography11 {
+      grid-area: 4 / 3 / 6 / 4;
+    }
+
+    .photography9 {
+      grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .photography5 {
+      grid-area: 4 / 2 / 5 / 3;
+    }
+
+    .photography8 {
+      grid-area: 6 / 3 / 7 / 4;
+    }
+
+    .photography12 {
+      grid-area: 5 / 2 / 7 / 3;
+    }
+
+  }
+  
