@@ -1,63 +1,43 @@
 <!DOCTYPE html>
   <html lang="en">
 
-<head>
+<head>  
+    <title>Index</title>
   <meta charset="UTF-8">
-  <title>About</title>
-
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/about.css">
-  <link rel="stylesheet" href="../css/nav.css">
-
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+  <div class="header">
   <nav class="navbar">
-    <div class="header">
       <div class="logo">
-        <a href="index.html"><h3>dy</h3></a>
-       </div>
-
+        <a href="index.html"><h3>Doyeon Yoo</h3></a>
       </div>
-        <ul class="menu-items">
-          <li><a href="index.html">Home</a></li>
-          <!-- <li><a href="casestudy.html">Projects</a></li> -->
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="aboutme.html" id="currentPage">About</a></li>
-          <li><a href="photography.html">Photos</a></li>
-        </ul>
 
-      <div class="nav-container">
-         <input class="checkbox" type="checkbox">
-          <div class="hamburger-lines">
-             <span class="line line1"></span>
-             <span class="line line2"></span>
-             <span class="line line3"></span>
-          </div>  
-
-         <ul class="mobilemenu">
-          <li><a href="index.html">Home</a></li>
-          <!-- <li><a href="casestudy.html">Projects</a></li> -->
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="aboutme.html" id="currentpage">About</a></li>
-          <li><a href="photography.html">Photos</a></li>
-        </ul>
-      </div>
+      <ul class="nav-bar">
+      <input type="checkbox" id="check">
+      <span class="menu">
+        <li><a href="index.html" id="currentPage" class="underline">Home</a></li>
+        <li><a href="resume.html" class="underline">Resume</a></li>
+        <li><a href="about.html" class="underline">About</a></li>
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+      </span>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </ul>
   </nav>
-  
+</div>
+
+
   <div class="aboutme">
   <h1 class="title">About Me</h1>
 
   <div class="About">
 
-    <img src="idm222-images/Headshot.webp" alt="Doyeon's headshot">
+    <img src="/images/_A1_8123.jpg" alt="Doyeon's headshot">
       <div class="text">
-        <h3>Hi there! I'm Doyeon</h3>
+        <h1>Hi there! I'm Doyeon</h1>
       <p>I am a Korean immigrant, DMV raised, and Philadelphia based student currently attending Drexel University. </p>
       <p>I am pursuing a B.S. in User Experience and Interaction Design, because I am obsessed with art and functionality.</p>
       <p>I love beautiful things, and capturing them through my camera. My free time usually includes sketching, dancing,

@@ -1,87 +1,81 @@
 <!DOCTYPE html>
   <html lang="en">
 
-<head>
+<head>  
+    <title>Index</title>
   <meta charset="UTF-8">
-  <title>Index</title>
-
-  <link rel="stylesheet" href="css/style.css">
-
-
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <div class="header">
   <nav class="navbar">
       <div class="logo">
-        <a href="index.html"><h3>dy</h3></a>
-
+        <a href="index.html"><h1>Doyeon Yoo</h1></a>
       </div>
-        <ul class="menu-items">
-          <li id= "Home"><a href="index.html" id="currentPage" class="underline">HOME</a></li>
-          <li><a href="casestudy.html" class="underline">PROJECTS</a></li>
-          <li><a href="resume.html" class="underline">RESUME</a></li>
-          <li><a href="aboutme.html" class="underline">ABOUT</a></li>
-          <li><a href="photography.html" class="underline">PHOTOS</a></li>
-        </ul>
+
+      <ul class="nav-bar">
+      <input type="checkbox" id="check">
+      <span class="menu">
+        <li><a href="index.html" id="currentPage" class="underline">Home</a></li>
+        <li><a href="resume.html" class="underline">Resume</a></li>
+        <li><a href="about.html" class="underline">About</a></li>
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+      </span>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </ul>
   </nav>
 </div>
-      <div class="nav-container">
-         <input class="checkbox" type="checkbox">
-          <div class="hamburger-lines">
-             <span class="line line1"></span>
-             <span class="line line2"></span>
-             <span class="line line3"></span>
-          </div>  
-
-         <ul class="mobilemenu">
-          <li><a href="index.html" id="currentpage">HOME</a></li>
-          <li><a href="casestudy.html">PROJECTS</a></li>
-          <li><a href="resume.html">RESUME</a></li>
-          <li><a href="aboutme.html">ABOUT</a></li>
-          <li><a href="photography.html">PHOTOS</a></li>
-        </ul>
-      </div>
-
 
   <div class="content">
-    <h1>Hello, my name is Doyeon.</h1>
-    <p>Philadelphia-based, UX UI designer and freelance portrait photographer currently attending Drexel University. I love art, user psychology, and functionality.</p>
+    <div class="content-text">
+      <h1>Hello, my name is Doyeon.</h1>
+      <h3>Philadelphia-based, UX UI designer and freelance portrait photographer currently attending Drexel University. I love art, user psychology, and functionality.</h3>
+    </div>
+    <img src="/images/Ag">
 </div>
 
 
 <section class="projects">
   <h2>Projects</h2>
-  <div class="project-grid">
       <!-- Project Item -->
       <div class="project-item">
-          <h3>Chess Rookie</h3>
+        <img src="/images/Action Flow.png">
+        <div class="project-item-text">
+          <h1>MicroSociety</h1>
           <p>Philadelphia-based, UX UI designer and freelance portrait photographer currently attending Drexel University. I love art, user psychology, and functionality.</p>
-          <a href="#">VIEW CASE STUDY</a>
+          <a href="#" class="underline">VIEW CASE STUDY</a>
+        </div>
       </div>
       <div class="project-item">
-          <h3>Chess Rookie</h3>
+        <div class="project-item-text">
+          <h1>MicroSociety</h1>
           <p>Philadelphia-based, UX UI designer and freelance portrait photographer currently attending Drexel University. I love art, user psychology, and functionality.</p>
-          <a href="#">VIEW CASE STUDY</a>
+          <a href="#" class="underline">VIEW CASE STUDY</a>
+        </div>
+        <img src="/images/Action Flow.png">
       </div>
       <div class="project-item">
-          <h3>Chess Rookie</h3>
+        <img src="/images/Action Flow.png">
+        <div class="project-item-text">
+          <h1>MicroSociety</h1>
           <p>Philadelphia-based, UX UI designer and freelance portrait photographer currently attending Drexel University. I love art, user psychology, and functionality.</p>
-          <a href="#">VIEW CASE STUDY</a>
+          <a href="#" class="underline">VIEW CASE STUDY</a>
+        </div>
       </div>
       <div class="project-item">
-          <h3>Chess Rookie</h3>
+        <div class="project-item-text">
+          <h1>MicroSociety</h1>
           <p>Philadelphia-based, UX UI designer and freelance portrait photographer currently attending Drexel University. I love art, user psychology, and functionality.</p>
-          <a href="#">VIEW CASE STUDY</a>
+          <a href="#" class="underline">VIEW CASE STUDY</a>
+        </div>
+        <img src="/images/Action Flow.png">
       </div>
-  </div>
 </section>
 
-  <div class="container">
+  <div class="footer">
   
   <footer>
     <a href="https://www.instagram.com/yoo.doyeon/" target="_blank" class="underline">Instagram</a>
