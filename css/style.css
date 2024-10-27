@@ -70,8 +70,7 @@
   
   @font-face {
     font-family: 'Montserrat';
-      src: url('../fonts/overpass_mono/overpass-mono-bold-webfont.woff') format('woff'),
-            url('../fonts/overpass_mono/overpass-mono-bold-webfont.woff2') format('woff2');
+      src: url('../css/Montserrat/Montserrat-Light.woff') format('woff');
     font-weight: 700;
   }
 
@@ -228,6 +227,7 @@ padding: 0 20px;
   
   .content-text {
     display: block;
+    padding-bottom: 30px;
   }
 
   .content-text h1 {
@@ -326,12 +326,13 @@ padding: 0 20px;
 /* FOOTER */
 
 footer {
-  background-color: #BE8F60;
+  background-color: #3C4454;
     height: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   
   footer a {
     width: fit-content;
@@ -386,6 +387,14 @@ footer {
   }
   #check:checked ~ .menu {
     right: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    height: 30vh;
+  }
+  footer a {
+    margin: 20px;
   }
 }
 
