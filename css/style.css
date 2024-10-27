@@ -407,6 +407,25 @@ footer {
     margin: 120px 7rem;
   }
 
+  .About img {
+    border-radius: 30px;
+    height: 35rem;
+    margin: 0 20px;
+  }
+
+  .About {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+   padding: 40px 30px;
+   margin: 0 30px;
+  }
+
+.text {
+  flex-direction: column;
+  padding: 20px; 
+  margin: 0 20px;
+}
   @media (max-width: 800px) {
     .aboutme {
       padding: 50px 5rem 7rem 5rem;
@@ -428,30 +447,7 @@ footer {
     }
 
 }
-  
-  @media (min-width: 1300px) {
-    .About {
-      display: flex;
-      position: relative;
-      align-items: center; 
-      justify-content: center; 
-      flex-wrap: wrap; 
-    padding: 40px 0;
-    }
-    
-    .About img {
-      height: 30rem;
-      padding: 0 30px;
-      order:1;
-      
-    }
-  
-  .text {
-    flex: 1;
-    order: 2; 
-    padding: 20px; 
-  }
-  }
+
 
     
   /*resume page*/
@@ -524,4 +520,34 @@ footer {
     margin: 4rem 0 5rem 0;
   }
 
+}
+
+
+/* CASE STUDY! */
+
+.caseStudy {
+  padding-top: 20px;
+  margin: 120px 7rem;
+}
+
+.caseStudy-thumbnail {
+  padding: 10px;
+  border-radius: 30px;
+  justify-content: center;
+  display: flex;
+}
+
+.caseStudy img {
+  width: 50rem;
+  border-radius: 30px;
+  margin: 20px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.caseStudy-overview {
+  border-radius: 30px;
+  border: 5px solid var(--hovercolor);
+  padding: 30px;
+  margin: 3rem 7rem;
 }
