@@ -220,7 +220,7 @@ padding: 0 20px;
 
 
    .content {
-    margin: 140px 6rem 100px 6rem;
+    margin: 90px 6rem 0px 6rem;
     padding: 40px 0;
     display: flex;
     align-items: center;
@@ -241,7 +241,8 @@ padding: 0 20px;
   }
 
 .content img {
-  width: 50rem;
+  width: 45rem;
+  height: auto;
 }
 /* UNDERLINE HOVER ANIMATION*/
 
@@ -312,7 +313,7 @@ padding: 0 20px;
   }
   
   .project-item a {
-    color: #e60023;
+    color: var(--hovercolor);
     font-weight: bold;
     text-decoration: none;
   }
@@ -326,11 +327,10 @@ padding: 0 20px;
 
 footer {
   background-color: #BE8F60;
-    height: 50vh;
+    height: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem 0;
   }
   
   footer a {
@@ -338,7 +338,6 @@ footer {
     margin: 1rem;
     color: white; 
     display:inline-block; 
-    padding: 12px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
@@ -346,11 +345,6 @@ footer {
   
 /* Responsive Design */
 
-@media (max-width: 768px) {
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 @media (max-width: 680px) { 
 
@@ -459,6 +453,14 @@ footer {
     width: max-content;
   }
 
+  .Resume {
+    padding: 12rem 15vw 0rem 15vw;
+  }
+
+  .resumeFish{
+    margin: 2em 0;
+  }
+
   .Resume h1 {
     border-bottom: 2px solid #36454F;
     padding-top: 1em;
@@ -494,18 +496,6 @@ footer {
 
     .Resume {
       padding: 8rem 10vw 0rem 10vw;
-    }
-
-    .resumeFish{
-      margin: 2em 0;
-    }
-
-  }
-
-  @media (min-width: 600px) and (max-width: 1100px) {
-
-    .Resume {
-      padding: 12rem 15vw 0rem 15vw;
     }
 
     .resumeFish{
