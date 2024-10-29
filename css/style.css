@@ -426,29 +426,47 @@ footer {
   padding: 20px; 
   margin: 0 20px;
 }
-  @media (max-width: 800px) {
-    .aboutme {
-      padding: 50px 5rem 7rem 5rem;
+
+.text p {
+  font-size: 18px;
+}
+@media (max-width: 600px) {
+  .About {
+    margin: 0;
+    padding:0;
+  }
+
+}
+
+  @media (max-width: 900px) {
+    .About {
+      flex-direction: column;
     }
     .About img {
-      width: 100%;
-      margin: 5rem 0;
+      max-width: 100%; 
+      height: auto; 
     }
   }
 
   @media (min-width: 800px) and (max-width: 1300px) {
     .aboutme {
-      padding: 4rem 10rem 0 10rem;
+      margin: 120px 5rem 100px 5rem;
     }
-
-    .About img {
-      width: 100%;
-      margin: 5rem 0;
-    }
-
 }
 
-
+@media (max-width: 1100px) {
+  .aboutme {
+    margin: 120px 3rem 100px 3rem;
+    padding: 0;
+  }
+  .text {
+    padding: 0;
+    margin: 0;
+  }
+  .text p {
+    font-size: 16px;
+  }
+}
     
   /*resume page*/
   
@@ -530,24 +548,60 @@ footer {
   margin: 120px 7rem;
 }
 
+.caseStudy h1 {
+  text-align: center;
+}
+
 .caseStudy-thumbnail {
   padding: 10px;
   border-radius: 30px;
-  justify-content: center;
   display: flex;
+}
+.caseStudy-overview-text h1 {
+  text-align: left;
 }
 
 .caseStudy img {
-  width: 50rem;
+  width: 50em;
   border-radius: 30px;
   margin: 20px;
   padding: 10px;
-  justify-content: center;
+}
+
+.caseStudy-overview-text {
+  margin: 30px 0;
+}
+
+.caseStudy-overview-text h3 {
+  color: var(--hovercolor);
 }
 
 .caseStudy-overview {
   border-radius: 30px;
   border: 5px solid var(--hovercolor);
-  padding: 30px;
+  padding: 20px 30px;
   margin: 3rem 7rem;
+}
+
+.caseStudy-process {
+  padding: 20px 30px;
+  margin: 3rem 7rem;
+}
+
+.caseStudy-process h3 {
+  margin: 20px 0;
+}
+
+.caseStudy-process img {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.caseStudy-sketches {
+  display: flex;
+  justify-content: center;
+}
+.caseStudy-sketches img {
+  width: 20rem;
 }
