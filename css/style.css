@@ -254,9 +254,17 @@ padding: 0 20px;
 .content img{
   width: 35em;
 }
-
-
 }
+
+@media (min-width: 1200px) { 
+
+  .content {
+    margin: 90px 2rem 120px 3rem;
+  }
+  
+  .content img{
+    width: 35em;
+  }
 
 /* UNDERLINE HOVER ANIMATION*/
 
