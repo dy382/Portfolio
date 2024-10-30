@@ -709,3 +709,44 @@ footer {
 .caseStudy-sketches img {
   width: 20rem;
 }
+
+@media (max-width: 1400px) {
+  .caseStudy-thumbnail img {
+    width: 45rem;
+  }
+
+  .caseStudy {
+margin: 120px 5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .caseStudy-thumbnail {
+    flex-direction: column;
+    align-items: center;
+  }
+  .caseStudy-thumbnail img {
+    width: 100%;
+  }
+  .caseStudy-overview-text {
+    text-align: center;
+  }
+  .caseStudy-overview-text h1 {
+    text-align: center;
+  }
+  .caseStudy-overview {
+    padding: 20px 0;
+    margin: 3rem 0;
+  }
+
+  .caseStudy-process {
+    padding: 20px 0;
+    margin: 3rem 0;
+  }
+  .caseStudy-sketches img {
+    width: 35%;
+}
+
+@media (max-width: 800px) {
+
+}
