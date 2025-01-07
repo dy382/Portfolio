@@ -91,8 +91,10 @@ body {
   color: var(--titlesandtext);
    width: 100%;
    margin: 0;
-   
-   
+}
+
+#currentPage {
+  color: #FF2B27;
 }
 
 h1 { 
@@ -154,6 +156,10 @@ p {
 .navbar .logo {
 padding: 12px 20px;
 margin: 16px 0;
+}
+
+.navbar .logo a {
+  color:#333B48;
 }
 
 
@@ -232,13 +238,14 @@ margin: 16px 0;
   }
 
   .content-text h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
   }
   
   .content-text p {
     max-width: 600px;
     line-height: 1.6;
+    font-size: 3em;
   }
 
 .content img {
@@ -328,63 +335,211 @@ margin: 16px 0;
   transform-origin: bottom right;
 }
 
+/* View Button */
+.viewButton {
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  background: #333B48;
+  margin: 10px;
+}
+
+.viewButton span{
+  display: block;
+  padding: 20px 50px;
+}
+.viewButton::before, .viewButton::after{
+  content:"";
+  width: 0;
+  height: 5px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #778294;
+}
+
+span::before, span::after{
+  content:"";
+  width:5px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #778294;
+}
+.viewButton:hover::before, .viewButton:hover::after{
+  width: 100%;
+}
+.viewButton:hover span::before, .viewButton:hover span::after{
+  height: 100%;
+}
+
+.viewButton::before, .viewButton::after{
+  transition-delay: 0.2s;
+}
+.viewButton span::before, .viewButton span::after{
+  transition-delay: 0s;
+}
+.viewButton::before{
+  right: 0;
+  top: 0;
+}
+.viewButton::after{
+  left: 0;
+  bottom: 0;
+}
+.viewButton span::before{
+  left: 0;
+  top: 0;
+}
+.viewButton span::after{
+  right: 0;
+  bottom: 0;
+}
+.viewButton:hover::before, .viewButton:hover::after{
+  transition-delay: 0s;
+}
+.viewButton:hover span::before, .viewButton:hover span::after{
+  transition-delay: 0.2s;
+} 
+
+
+/*index introduction/homepage*/
+.container {
+  scroll-snap-type: y proximity; /* you can do horizontal scroll with x mandatory */
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+  width: 100%;
+  margin: auto;
+}
+
+section {
+  height: 90vh;
+}
+
+.Doyeon {
+  padding: 13rem 0 10rem 0rem;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+  .Doyeon h4 {
+    margin-top: 10rem;
+  }
+
+  .Doyeon h1 {
+    font-size: 3rem;
+    margin-top: 3rem;
+    padding: 0 10px;
+    border-bottom: 2px solid #36454F;
+  }
+.Hello {
+  color: #36454F;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Hello h2 {
+  font-size: 18px;
+}  
+
+.ident {
+  margin: 0 0 0 4rem;
+}
+
+
+@media (max-width: 900px) { 
+  .Doyeon {
+    padding: 13rem 0 10rem 10rem;
+  }
+
+  .Doyeon h4 {
+    margin-top: 0rem;
+}
+  
+  .Hello {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 900px) { 
+  .Hello {
+    padding: 0 500px;
+  }
+}
 
 /* PROJECT SECTION IN TWO COLUMNS */
 
 .projects {
     margin: 20px 7rem 100px 7rem;
+    height: 100%;
   }
   
   .projects h2 {
     font-size: 1.8em;
     font-weight: bold;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-    text-align: left;
-    margin-bottom: 20px;
   }
   
   .project-item {
     display: flex;
-    padding: 20px;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
     border-radius: 30px;
-    text-align: left;
-    margin: 2rem 10rem;
   }
 
   .project-item img {
     width: 60%;
     border-radius: 30px;
+    height: fit-content;
+    border: 2px solid #36454F;
   }
-  
-  .project-item h3 {
-    font-size: 1.2em;
+
+  .project-item h1 {
+    font-size: 40px;
     font-weight: bold;
+    margin: 10px;
   }
   
   .project-item p {
     font-size: 0.9em;
     line-height: 1.5;
-  }
-  
-  .project-item a {
-    color: var(--hovercolor);
-    font-weight: bold;
-    text-decoration: none;
+    margin: 10px;
   }
 
   .project-item-text {
-    width: 40%;
+    width: 45%;
     margin: 30px;
+    height: 100%;
+    align-content: center;
   }
    
+  .project-item-text-2 {
+    text-align: right;
+  }
+
+.line {
+  background: var(--titlesandtext);
+  width: 60px;
+  height: 7px;
+  margin: 10px;
+}
+
 @media (max-width: 1400px) {
   .project-item {
-    margin: 2rem 5%;
+    /* margin: 2rem 5%; */
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
 .projects {
   margin: 50px 100px 100px 100px;
 }
@@ -414,7 +569,7 @@ margin: 16px 0;
 
 footer {
   background-color: #3C4454;
-    height: 15rem;
+  height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -478,7 +633,7 @@ footer {
 
 
   /*ABOUT ME PAGE*/
-  .aboutme {
+  .figure {
     margin: 120px 7rem;
   }
 
@@ -681,10 +836,7 @@ footer {
 }
 
 .caseStudy-overview {
-  border-radius: 30px;
-  border: 5px solid var(--hovercolor);
   padding: 20px 30px;
-  margin: 3rem 7rem;
 }
 
 .caseStudy-process {
@@ -746,7 +898,160 @@ margin: 120px 5rem;
   .caseStudy-sketches img {
     width: 35%;
 }
-
-@media (max-width: 800px) {
-
 }
+/* Photography */
+
+  /*Photo Page*/
+
+  
+  .phototitle h1 {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 600px) {
+    .phototitle {
+      padding: 50px 3rem 0 3rem;
+    }
+
+    .Photo {
+      padding: 3em 3em 3em 3em;
+    }
+
+    .Photo Img {
+      margin-bottom: 3em; 
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 900px) {
+
+    .Photo {
+      padding: 3em 7em 3em 7em;
+    }
+
+    .Photo Img {
+      margin-bottom: 3em; 
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 900px) and (max-width: 1200px) {
+    
+    .phototitle h1 {
+      margin-bottom: 0;
+    }
+    
+    .Photo Img {
+      width: 15em;
+    }
+
+    .Photo {
+      display: grid;
+      margin-bottom: 3em;
+      grid-template-columns: auto auto auto;
+      gap: 2em 2em;
+      justify-content: center;
+    }
+
+    .photography1 {
+      grid-area: 1 / 1 / 3 / 2;
+    }
+
+    .photography2 {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .photography6 {
+      grid-area: 1 / 3 / 3 / 4;
+    }
+
+    .photography7 {
+      grid-area: 2 / 2 / 4 / 3;
+    }
+
+    .photography10 {
+      grid-area: 4 / 1 / 6 / 2;
+    }
+
+    .photography11 {
+      grid-area: 4 / 3 / 6 / 4;
+    }
+
+    .photography9 {
+      grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .photography5 {
+      grid-area: 4 / 2 / 5 / 3;
+    }
+
+    .photography8 {
+      grid-area: 6 / 3 / 7 / 4;
+    }
+
+    .photography12 {
+      grid-area: 5 / 2 / 7 / 3;
+    }
+
+  }
+  
+  
+  @media (min-width: 1200px) {
+
+    .phototitle h1 {
+      margin-bottom: 0;
+    }
+    
+    .Photo Img {
+      width: 20em;
+    }
+
+    .Photo {
+      display: grid;
+      margin: 7em 0;
+      grid-template-columns: auto auto auto;
+      gap: 40px 40px;
+      justify-content: center;
+    }
+
+    .photography1 {
+      grid-area: 1 / 1 / 3 / 2;
+    }
+
+    .photography2 {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .photography6 {
+      grid-area: 1 / 3 / 3 / 4;
+    }
+
+    .photography7 {
+      grid-area: 2 / 2 / 4 / 3;
+    }
+
+    .photography10 {
+      grid-area: 4 / 1 / 6 / 2;
+    }
+
+    .photography11 {
+      grid-area: 4 / 3 / 6 / 4;
+    }
+
+    .photography9 {
+      grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .photography5 {
+      grid-area: 4 / 2 / 5 / 3;
+    }
+
+    .photography8 {
+      grid-area: 6 / 3 / 7 / 4;
+    }
+
+    .photography12 {
+      grid-area: 5 / 2 / 7 / 3;
+    }
+
+  }
