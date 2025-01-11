@@ -136,11 +136,6 @@ p {
     font-size: 15px;
 }
 
-li {
-  font-family: 'Overpass', Georgia, sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-}
 #currentPage {
     color: var(--hovercolor);
 }
@@ -809,20 +804,25 @@ footer {
 
 .caseStudy {
   padding-top: 20px;
-  margin: 120px 7rem;
+  margin: 100px auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .caseStudy h1 {
   text-align: center;
+  font-size: 50px;
 }
 
 .caseStudy-thumbnail {
-  border-radius: 30px;
   display: flex;
+  margin: 0 30px;
+  align-items: center;
 }
 
 .caseStudy img {
-  width: 50em;
   border-radius: 30px;
   margin: 20px;
   padding: 10px;
@@ -834,11 +834,12 @@ footer {
 }
 
 .caseStudy-overview-text p {
-  margin: 10px 0;
+  margin: 0 0 10px 0;
 }
 
-.caseStudy-overview-text h3 {
+.caseStudy-overview-text h2 {
   color: var(--hovercolor);
+  margin: 3px 0 0 0;
 }
 
 .caseStudy-overview {
@@ -846,13 +847,20 @@ footer {
   max-width: 65%;
 }
 
+.caseStudy-overview h2 {
+  margin: 0 0 10px 0;
+  
+}
+
+
 .caseStudy-process {
   padding: 20px 30px;
   margin: 3rem 7rem;
 }
 
-.caseStudy-process h3 {
+.caseStudy-process h2 {
   margin: 20px 0;
+  font-size: 25px;
 }
 
 .caseStudy-process img {
@@ -874,6 +882,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+    font-family: 'Overpass', Georgia, sans-serif;
+    font-weight: 600;
 }
 
 #Roles li {
@@ -883,17 +893,26 @@ footer {
   border: 1px solid #333B48;
 }
 
-@media (max-width: 1400px) {
-  .caseStudy-thumbnail img {
-    width: 45rem;
-  }
-
-  .caseStudy {
-margin: 120px 5rem;
-  }
+.problem-container {
+  display: flex;
 }
 
-@media (max-width: 1200px) {
+.Goals {
+background: #fcf1da;
+padding: 20px;
+border-radius: 10px;
+}
+
+.Goals ul {
+  padding: 0 0 0 20px;
+}
+
+.Goals li {
+  padding-bottom: 5px;
+}
+
+
+@media (max-width: 800px) {
   .caseStudy-thumbnail {
     flex-direction: column;
     align-items: center;
