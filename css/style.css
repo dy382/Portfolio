@@ -853,7 +853,7 @@ footer {
 }
 
 
-.caseStudy-process {
+.contain {
   padding: 20px 30px;
   margin: 3rem 7rem;
 }
@@ -913,10 +913,10 @@ border-radius: 10px;
 
 hr {
   display: block;
-  height: 2px;
-  border-top: 2px solid #36454F;
+  height: 1px;
+  border-top: 1px solid #5C6274;
   border-radius: 10px;
-  margin: 4em 0; 
+  margin: 3em 0; 
   padding: 0;
 }
 
