@@ -895,6 +895,10 @@ footer {
   display: flex;
 }
 
+.problem-container img {
+  width: 80%;
+}
+
 .Goals {
 background: #fcf1da;
 padding: 20px;
@@ -921,7 +925,7 @@ hr {
 .imagesFlex {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 33.33%;
   padding: 0;
   margin: 0;
 }
