@@ -853,15 +853,21 @@ footer {
 
 .contain {
   padding: 20px 30px;
-  margin: 3rem 7rem;
+  margin: 0 7rem;
 }
 
-.caseStudy-process h2 {
+.caseStudy-process {
+   display: flex;
+   flex-direction: column;
+}
+
+.contain h2 {
   margin: 20px 0;
   font-size: 25px;
+  text-align: center;
 }
 
-.caseStudy-process img {
+.contain img {
   width: 100%;
   margin: auto;
   display: block;
@@ -896,7 +902,7 @@ footer {
 }
 
 .problem-container img {
-  width: 80%;
+  width: 70%;
 }
 
 .Goals {
@@ -925,9 +931,12 @@ hr {
 .imagesFlex {
   display: flex;
   flex-direction: row;
-  width: 33.33%;
   padding: 0;
   margin: 0;
+}
+
+.imagesFlex img {
+  width: 33.33%;
 }
 
 .iframe {
