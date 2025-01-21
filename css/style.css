@@ -942,6 +942,16 @@ hr {
   height: 80vh;
 }
 
+.textpic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.textpic p {
+  max-width: 400px;
+}
+
 @media (max-width: 800px) {
   .caseStudy-thumbnail {
     flex-direction: column;
