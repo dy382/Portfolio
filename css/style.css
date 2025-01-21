@@ -133,7 +133,6 @@ a {
 p {
     font-family: 'Overpass Mono', Georgia, sans-serif;
     font-weight: 400;
-    font-size: 15px;
 }
 
 #currentPage {
@@ -526,6 +525,11 @@ section {
     text-align: right;
   }
 
+.project-wrapper2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .line {
   background: var(--titlesandtext);
   width: 60px;
@@ -824,13 +828,7 @@ footer {
 
 .caseStudy img {
   border-radius: 30px;
-  margin: 20px;
-  padding: 10px;
-}
-
-.caseStudy-overview-text {
-  padding: 20px 30px;
-  max-width: 35%;
+  padding: 50px;
 }
 
 .caseStudy-overview-text p {
@@ -842,10 +840,6 @@ footer {
   margin: 3px 0 0 0;
 }
 
-.caseStudy-overview {
-  padding: 20px 30px;
-  max-width: 65%;
-}
 
 .caseStudy-overview h2 {
   margin: 0 0 10px 0;
@@ -888,6 +882,7 @@ footer {
   justify-content: center;
     font-family: 'Overpass', Georgia, sans-serif;
     font-weight: 600;
+  padding: 0;
 }
 
 #Roles li {
@@ -950,29 +945,39 @@ hr {
 @media (max-width: 800px) {
   .caseStudy-thumbnail {
     flex-direction: column;
-    align-items: center;
+
   }
   .caseStudy-thumbnail img {
     width: 100%;
   }
-  .caseStudy-overview-text {
-    text-align: center;
-  }
-  .caseStudy-overview-text h1 {
-    text-align: center;
-  }
+
   .caseStudy-overview {
     padding: 20px 0;
     margin: 3rem 0;
   }
 
-  .caseStudy-process {
-    padding: 20px 0;
-    margin: 3rem 0;
-  }
   .caseStudy-sketches img {
     width: 35%;
 }
+
+  .caseStudy-overview-text {
+  width: 100%;
+}
+
+
+}
+
+@media (min-width: 801px) {
+  .caseStudy-overview {
+    padding: 20px 30px;
+    max-width: 65%;
+  }
+
+  .caseStudy-overview-text {
+    padding: 20px 30px;
+    max-width: 35%;
+  }
+
 }
 /* Photography */
 
@@ -1089,6 +1094,7 @@ hr {
       justify-content: center;
     }
 
+
     .photography1 {
       grid-area: 1 / 1 / 3 / 2;
     }
@@ -1130,3 +1136,64 @@ hr {
     }
 
   }
+
+.wrapper {
+  display: grid;
+  margin: 7em 0;
+  grid-template-columns: auto auto auto;
+  gap: 40px 40px;
+  justify-content: center;
+  
+}
+
+.card {
+  width: 20em;
+  height: 100%;
+  padding: 2rem 1rem;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(20px)
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;width: 100%;
+  height:100%;
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 1;
+}
+
+.card:hover:before {
+  opacity: 1;
+}
+
+.card img {
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card .info {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(30px)
+}
