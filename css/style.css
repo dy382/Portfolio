@@ -828,7 +828,7 @@ footer {
 
 .caseStudy img {
   border-radius: 30px;
-  padding: 50px;
+  margin: 10px;
 }
 
 .caseStudy-overview-text p {
@@ -846,8 +846,7 @@ footer {
 }
 
 .contain {
-  padding: 20px 30px;
-  margin: 0 7rem;
+  margin: 20px 7rem;
 }
 
 .caseStudy-process {
@@ -863,6 +862,7 @@ footer {
 
 .contain img {
   width: 100%;
+  height: 100%;
   margin: auto;
   display: block;
 }
@@ -956,8 +956,8 @@ hr {
     margin: 3rem 0;
   }
 
-  .caseStudy-sketches img {
-    width: 35%;
+  .caseStudy img {
+    margin: 10px;
 }
 
   .caseStudy-overview-text {
@@ -976,6 +976,10 @@ hr {
   .caseStudy-overview-text {
     padding: 20px 30px;
     max-width: 35%;
+  }
+
+  .contain {
+    padding: 0 30px;
   }
 
 }
