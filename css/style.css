@@ -827,6 +827,12 @@ footer {
   margin: 0 20px;
   align-items: center;
 }
+
+.thumbnail-image {
+  border-radius: 30px;
+  margin: 10px;
+}
+
 .caseStudy-overview-text  {
   margin: 0 20px;
   width: 80%;
@@ -888,6 +894,10 @@ hr {
   font-size: 25px;
 }
 
+.cs img {
+  border-radius: 30px;
+  padding: 10px;
+}
 
 .se {
   max-width: 800px;
@@ -906,7 +916,7 @@ hr {
 }
 
 .txtimg img {
-  width: 100%;
+  max-width: 500px;
 }
 
 .imgimgimg {
@@ -918,7 +928,6 @@ hr {
 .imgimgimg img {
   max-width: 1000px;
   width: 33%;
-  padding: 10px;
 }
 
 .pt {
