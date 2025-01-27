@@ -1081,7 +1081,7 @@ border-radius: 10px;
     }
 
     .Photo {
-      padding: 3em 3em 3em 3em;
+      padding: 7em 3em em 3em;
     }
 
     .Photo Img {
@@ -1093,7 +1093,7 @@ border-radius: 10px;
   @media (min-width: 600px) and (max-width: 900px) {
 
     .Photo {
-      padding: 3em 7em 3em 7em;
+      margin: 7em;
     }
 
     .Photo Img {
@@ -1114,7 +1114,7 @@ border-radius: 10px;
 
     .Photo {
       display: grid;
-      margin-bottom: 3em;
+      margin: 7em 0;
       grid-template-columns: auto auto auto;
       gap: 2em 2em;
       justify-content: center;
