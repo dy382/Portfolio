@@ -664,7 +664,7 @@ footer {
 }
 
 .text p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 @media (max-width: 600px) {
@@ -738,9 +738,7 @@ footer {
     padding: 0;
     margin: 0;
   }
-  .text p {
-    font-size: 16px;
-  }
+
   .About img {
     width: 40rem; 
     height: auto; 
