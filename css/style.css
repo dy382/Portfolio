@@ -264,9 +264,6 @@ margin: 16px 0;
 
 @media (min-width: 900px) and (max-width: 1199px) { 
 
-  .content {
-    margin: 20px 4rem 0px 4rem;
-  }
   .content-text {
     width: 50vw;
   }
@@ -281,21 +278,17 @@ margin: 16px 0;
 @media (max-width: 899px) { 
 
   .content {
-    margin: 50px 20px 0px 3rem;
     flex-direction: column;
   }
 
   .content img {
-    width: 80%;
-    height: auto;
+    width: auto;
+    height: 80%;
   }
   
 }
 
 @media (max-width: 599px) {
-.content {
-  margin: 50px 20px 0px 3rem;
-}
 
   .content .text {
     margin: 20px 0 10px 0;
@@ -478,97 +471,199 @@ section {
 }
 
 /* PROJECT SECTION IN TWO COLUMNS */
-
 .projects {
-    margin: 0px 7rem 50px 7rem;
-    height: 100%;
-  }
-  
+  margin: 0 7rem 50px 7rem;
+  height: 100%;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin: 5rem 0;
+  gap: 3rem;
+}
   .projects h2 {
     font-size: 1.8em;
     font-weight: bold;
     border-bottom: 1px solid #ccc;
   }
   
-  .project-item {
-    display: flex;
-    height: 80vh;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-  }
-
-  .project-item img {
-    width: 60%;
-    border-radius: 30px;
-    height: fit-content;
-    border: 2px solid #36454F;
-  }
-
-  .project-item h1 {
-    font-size: 45px;
-    font-weight: bold;
-    margin: 10px;
-  }
-  
-  .project-item p {
-    font-size: 20px;
-    line-height: 1.5;
-    margin: 10px;
-  }
-
-  .project-item-text {
-    width: 45%;
-    margin: 30px;
-    height: 100%;
-    align-content: center;
-  }
-   
-  .project-item-text-2 {
-    text-align: right;
-  }
-
-.project-wrapper2 {
-  display: flex;
+.project-item.reverse {
   flex-direction: row-reverse;
+}
+
+.project-item img {
+  width: 50%;
+  border-radius: 30px;
+  height: auto;
+  border: 2px solid #36454F;
+  object-fit: cover;
+}
+
+.project-text {
+  width: 50%;
+  text-align: left;
+}
+
+.project-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.project-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 10px 0 10px 0;
 }
 
 .line {
   background: var(--titlesandtext);
   width: 60px;
   height: 7px;
-  margin: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}.projects {
+  margin: 0 7rem 50px 7rem;
+  height: 100%;
 }
 
-@media (max-width: 1400px) {
-  .project-item {
-    /* margin: 2rem 5%; */
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin: 5rem 0;
+  gap: 3rem;
+}
+
+.project-item.reverse {
+  flex-direction: row-reverse;
+}
+
+
+
+/* ✅ Responsive Breakpoints */
+@media (max-width: 1200px) {
+  .projects {
+    margin: 0 4rem 80px 4rem;
+  }
+
+  .project-text h1 {
+    font-size: 2rem;
+  }
+
+  .project-text p {
+    font-size: 1.1rem;
   }
 }
 
-@media (max-width: 1000px) {
-.projects {
-  margin: 50px 100px 100px 100px;
-}
+@media (max-width: 900px) {
+  .projects {
+    margin: 0 2rem 80px 2rem;
+  }
+
   .project-item {
-    margin: 2rem 0;
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
+    margin: 1rem;
   }
+
+  .project-item.reverse {
+    flex-direction: column;
+  }
+
   .project-item img {
     width: 100%;
   }
 
-  .project-item-text {
+  .project-text {
     width: 100%;
-    margin: 0;
-    padding: 0;
+  }
+
+  .project-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .line {
+    margin: 10px auto;
+  }
+
+  .viewButton {
+    margin-top: 10px;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .projects {
-  margin: 100px 50px 50px 50px;
+    margin: 0 1.5rem 60px 1.5rem;
+  }
+
+  .project-text p {
+    font-size: 1rem;
+  }
+}
+
+
+/* ✅ Responsive Breakpoints */
+@media (max-width: 1200px) {
+  .projects {
+    margin: 0 4rem 80px 4rem;
+  }
+
+  .project-text h1 {
+    font-size: 2rem;
+  }
+
+  .project-text p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects {
+    margin: 0 2rem 80px 2rem;
+  }
+
+  .project-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-item.reverse {
+    flex-direction: column;
+  }
+
+  .project-item img {
+    width: 100%;
+  }
+
+  .project-text {
+    width: 100%;
+  }
+
+  .project-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .line {
+    margin: 10px auto;
+  }
+
+  .viewButton {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    margin: 0 1.5rem 60px 1.5rem;
+  }
+
+  .project-text p {
+    font-size: 1rem;
   }
 }
 
@@ -862,6 +957,7 @@ footer {
     font-family: 'Overpass', Georgia, sans-serif;
     font-weight: 600;
   padding: 0;
+  margin: 0;
 }
 
 #Roles li {
