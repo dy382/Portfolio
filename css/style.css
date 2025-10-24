@@ -334,13 +334,13 @@ margin: 16px 0;
 .viewButton {
   display: inline-block;
   position: relative;
-  background: none;
   border: none;
   color: #fff;
   font-size: 18px;
   cursor: pointer;
   background: #333B48;
-  margin: 10px;
+  margin: 10px 0;
+
 }
 
 .viewButton span{
@@ -412,7 +412,7 @@ span::before, span::after{
 }
 
 section {
-  height: 90vh;
+  height: 80vh;
 }
 
 .Doyeon {
@@ -488,6 +488,7 @@ section {
     font-size: 1.8em;
     font-weight: bold;
     border-bottom: 1px solid #ccc;
+    margin: 0;
   }
   
 .project-item.reverse {
@@ -560,41 +561,7 @@ section {
   }
 }
 
-@media (max-width: 900px) {
-  .projects {
-    margin: 0 2rem 80px 2rem;
-  }
 
-  .project-item {
-    flex-direction: column;
-    text-align: center;
-    margin: 1rem;
-  }
-
-  .project-item.reverse {
-    flex-direction: column;
-  }
-
-  .project-item img {
-    width: 100%;
-  }
-
-  .project-text {
-    width: 100%;
-  }
-
-  .project-text h1 {
-    font-size: 1.8rem;
-  }
-
-  .line {
-    margin: 10px auto;
-  }
-
-  .viewButton {
-    margin-top: 10px;
-  }
-}
 
 @media (max-width: 600px) {
   .projects {
@@ -630,6 +597,7 @@ section {
   .project-item {
     flex-direction: column;
     text-align: center;
+    margin: 1rem;
   }
 
   .project-item.reverse {
@@ -647,15 +615,11 @@ section {
   .project-text h1 {
     font-size: 1.8rem;
   }
-
-  .line {
-    margin: 10px auto;
-  }
-
   .viewButton {
     margin-top: 10px;
   }
 }
+
 
 @media (max-width: 600px) {
   .projects {
@@ -763,6 +727,7 @@ footer {
   font-size: 20px;
 }
 
+
 @media (max-width: 600px) {
   .About {
     flex-direction: column;
@@ -853,7 +818,11 @@ footer {
   }
 
   .Resume {
-    margin: 12rem 15vw 5rem 15vw;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
   }
 
   .Resume h1 {
@@ -887,6 +856,10 @@ footer {
     margin: 0;
   }
 
+  .Resume .viewButton {
+    width: 15rem;
+  }
+
   @media (max-width: 600px) {
 
     .Resume {
@@ -903,8 +876,7 @@ footer {
 /* CASE STUDY! */
 
 .caseStudy {
-  padding-top: 20px;
-  margin: 100px auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -952,20 +924,21 @@ footer {
 #Roles {
   list-style-type: none;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-    font-family: 'Overpass', Georgia, sans-serif;
-    font-weight: 600;
+  flex-wrap: wrap;
+  font-family: 'Overpass', Georgia, sans-serif;
+  font-weight: 600;
   padding: 0;
   margin: 0;
+  gap: 10px; /* ✅ cleaner spacing between items */
 }
 
 #Roles li {
-  margin: 10px;
-  padding: 4px 4px 2px 4px;
+  padding: 4px 5px;
   border-radius: 5px;
   border: 1px solid #333B48;
+  white-space: nowrap; /* ✅ prevents words from breaking inside an li */
 }
+
 
 hr {
   display: block;
