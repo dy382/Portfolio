@@ -332,21 +332,25 @@ margin: 16px 0;
 
 /* View Button */
 .viewButton {
-  display: inline-block;
   position: relative;
-  border: none;
+  display: inline-block;
+  background: #333B48;
   color: #fff;
   font-size: 18px;
+  border-radius: 10px;
   cursor: pointer;
-  background: #333B48;
+  overflow: hidden;
   margin: 10px 0;
-
 }
 
-.viewButton span{
+.viewButton span {
   display: block;
-  padding: 20px 50px;
+  padding: 15px 40px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
 }
+
 .viewButton::before, .viewButton::after{
   content:"";
   width: 0;
@@ -700,12 +704,16 @@ footer {
 
   /*ABOUT ME PAGE*/
   .figure {
-    margin: 120px 7rem;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .About img {
     border-radius: 30px;
-    height: 35rem;
+    width: 50vh;
+    height: auto;
     margin: 0 20px;
   }
 
@@ -727,25 +735,29 @@ footer {
   font-size: 20px;
 }
 
+@media (min-width: 1100px) {
+  .aboutme {
+    margin: 3rem 3rem 100px 3rem;
+    padding: 0;
+  }
+  .text {
+    padding: 0;
+    margin: 0;
+  }
 
-@media (max-width: 600px) {
+}
+
+
+@media (min-width: 801px) and (max-width: 1100px) {
   .About {
     flex-direction: column;
-    margin: 0;
-    padding: 0;
   }
-  .About .text {
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-  }
-
   .About img {
     max-width: 100%; 
     height: auto; 
   }
   .aboutme {
-    margin: 100px 50px 50px 50px;
+    margin: 3rem 100px 100px 100px;
     padding: 0;
   }
 }
@@ -764,7 +776,7 @@ footer {
     padding: 0; 
   }
   .aboutme {
-    margin: 100px 100px 100px 100px;
+    margin: 3rem 100px 100px 100px;
     padding: 0;
   }
   .About .text {
@@ -774,37 +786,30 @@ footer {
   }
 }
 
-
-  @media (min-width: 801px) and (max-width: 1100px) {
-    .About {
-      flex-direction: column;
-    }
-    .About img {
-      max-width: 100%; 
-      height: auto; 
-    }
-    .aboutme {
-      margin: 120px 100px 100px 100px;
-      padding: 0;
-    }
-  }
-
-
-@media (min-width: 1100px) {
-  .aboutme {
-    margin: 120px 3rem 100px 3rem;
-    padding: 0;
-  }
-  .text {
-    padding: 0;
+@media (max-width: 600px) {
+  .About {
+    flex-direction: column;
     margin: 0;
+    padding: 0;
+  }
+  .About .text {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
   }
 
   .About img {
-    width: 40rem; 
+    max-width: 100%; 
     height: auto; 
   }
+  .aboutme {
+    margin: 3rem 50px 50px 50px;
+    padding: 0;
+  }
 }
+
+
+
     
   /*resume page*/
   
@@ -857,7 +862,7 @@ footer {
   }
 
   .Resume .viewButton {
-    width: 15rem;
+    width: 200px;
   }
 
   @media (max-width: 600px) {
@@ -1149,7 +1154,7 @@ border-radius: 10px;
     }
 
     .Photo {
-      padding: 7em 3em em 3em;
+      padding: 3em 3em em 3em;
     }
 
     .Photo Img {
@@ -1161,7 +1166,7 @@ border-radius: 10px;
   @media (min-width: 600px) and (max-width: 900px) {
 
     .Photo {
-      margin: 7em;
+      margin: 3em;
     }
 
     .Photo Img {
@@ -1182,7 +1187,7 @@ border-radius: 10px;
 
     .Photo {
       display: grid;
-      margin: 7em 0;
+      margin: 3em 0;
       grid-template-columns: auto auto auto;
       gap: 2em 2em;
       justify-content: center;
@@ -1243,7 +1248,7 @@ border-radius: 10px;
 
     .Photo {
       display: grid;
-      margin: 7em 0;
+      margin: 3em 0;
       grid-template-columns: auto auto auto;
       gap: 40px 40px;
       justify-content: center;
@@ -1294,7 +1299,7 @@ border-radius: 10px;
 
 .wrapper {
   display: grid;
-  margin: 7em 0;
+  margin: 3em 0;
   grid-template-columns: auto auto auto;
   gap: 40px 40px;
   justify-content: center;
@@ -1355,7 +1360,6 @@ border-radius: 10px;
 
 .galleryflex {
   display: flex;
-  margin: 7em 0;
   grid-template-columns: auto auto auto;
   gap: 40px 40px;
   justify-content: center;
