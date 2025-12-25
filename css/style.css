@@ -345,7 +345,7 @@ margin: 16px 0;
 
 .viewButton span {
   display: block;
-  padding: 15px 40px;
+  padding: 15px 10px;
   border-radius: 10px;
   position: relative;
   z-index: 2;
@@ -414,10 +414,10 @@ span::before, span::after{
   width: 100%;
   margin: auto;
 }
-
+/* 
 section {
   height: 80vh;
-}
+} */
 
 .Doyeon {
   padding: 13rem 0 10rem 0rem;
@@ -634,7 +634,7 @@ section {
     font-size: 1rem;
   }
 }
-
+ 
 /* FOOTER */
 
 footer {
@@ -691,7 +691,7 @@ footer {
 
   footer {
     flex-direction: column;
-    height: 30vh;
+    height: 10vh;
   }
   footer a {
     margin: 20px;
@@ -820,14 +820,28 @@ footer {
       font-weight: bold;
       text-decoration: none;
       margin-bottom: 20px;
+
+      
+  }
+  .Page {
+    margin: 50px auto;
+    max-width: 1200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
 
   .Resume {
-    margin: 50px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #36454F;
+    border-radius: 20px;
   }
 
   .Resume h1 {
