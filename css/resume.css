@@ -1,76 +1,80 @@
-  
   /*resume page*/
   
   /*fish means boxed (inside joke name). fish represents the texts that are boxed for design purposes (also represents button)*/
 
-  .resumeFish {
-    width: max-content;
-  }
+  .resumeFish a {
+    color: var(--hovercolor);
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 20px;
 
-  .Resume h1 {
-    border-bottom: 2px solid #36454F;
-    padding-top: 1em;
-    margin: 0;
-  }
+    
+}
+.Page {
+  margin: 50px auto;
+  max-width: 1200px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
-  .Resume h2 {
-    padding-top: 13px;
-    margin: 0;
-  }
+.Resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  margin: 30px 0;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #36454F;
+  border-radius: 20px;
+}
 
-  .Resume h3 {
-    padding-top: 2px;
-    margin: 0;
-  }
+.Resume h1 {
+  border-bottom: 2px solid #36454F;
+  padding-top: 1em;
+  margin: 0;
+}
 
-  .Resume h4 {
-    padding-top: 1px;
-    margin: 0;
-  }
+.Resume h2 {
+  padding-top: 13px;
+  margin: 0;
+}
 
-  .Resume p {
-    padding-top: 1px;
-    margin: 0;
-  }
+.Resume h3 {
+  padding-top: 2px;
+  margin: 0;
+}
 
-  .Resume ul {
-    padding-top: 2px;
-    margin: 0;
-  }
+.Resume h4 {
+  padding-top: 1px;
+  margin: 0;
+}
 
-  @media (max-width: 600px) {
+.Resume p {
+  padding-top: 1px;
+  margin: 0;
+}
 
-    .Resume {
-      padding: 8rem 10vw 0rem 10vw;
-    }
+.Resume ul {
+  padding-top: 2px;
+  margin: 0;
+}
 
-    .resumeFish{
-      margin: 2em 0;
-    }
+.Resume .viewButton {
+  width: 200px;
+}
 
-  }
+@media (max-width: 600px) {
 
-  @media (min-width: 600px) and (max-width: 1100px) {
-
-    .Resume {
-      padding: 12rem 15vw 0rem 15vw;
-    }
-
-    .resumeFish{
-      margin: 2em 0;
-    }
-
-  }
-
-@media (min-width: 1100px) {
   .Resume {
-    padding: 12rem 20vw 0rem 20vw;
+    margin: 7rem 15vw 5rem 15vw;
   }
 
-  .resumeFish {
-    display: flex;
-    justify-content: center;
-    margin: 4rem 0 5rem 0;
+  .resumeFish{
+    margin: 1em 0;
   }
 
 }

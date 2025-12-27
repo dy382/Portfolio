@@ -249,7 +249,9 @@ margin: 16px 0;
     font-size: 3em;
   }
 
-
+.content img {
+  max-width: 500px;
+}
 @media (min-width: 1200px) { 
 
   .content-text {
@@ -269,7 +271,7 @@ margin: 16px 0;
   }
 
   .content img {
-    width: 80%;
+    max-width: 500px;
     height: auto;
   }
 }
@@ -639,23 +641,35 @@ section {
 
 footer {
   background-color: #3C4454;
-  height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  color: white; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 116px;
+  padding: 2vw;
+  align-items: center;
   }
 
   
   footer a {
-    width: fit-content;
-    margin: 1rem;
     color: white; 
+    width: fit-content;
     display:inline-block; 
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    padding: 10px;
   }
-  
+
+.socials {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-text {
+  padding: 10px;
+  margin: 0px;
+}
 /* Responsive Design */
 
 
@@ -702,194 +716,8 @@ footer {
 
 
 
-  /*ABOUT ME PAGE*/
-  .figure {
-    margin: 50px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .About img {
-    border-radius: 30px;
-    width: 50vh;
-    height: auto;
-    margin: 0 20px;
-  }
-
-  .About {
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-   padding: 40px 30px;
-   margin: 0 30px;
-  }
-
-.text {
-  flex-direction: column;
-  padding: 20px; 
-  margin: 0 20px;
-}
-
-.text p {
-  font-size: 20px;
-}
-
-@media (min-width: 1100px) {
-  .aboutme {
-    margin: 3rem 3rem 100px 3rem;
-    padding: 0;
-  }
-  .text {
-    padding: 0;
-    margin: 0;
-  }
-
-}
-
-
-@media (min-width: 801px) and (max-width: 1100px) {
-  .About {
-    flex-direction: column;
-  }
-  .About img {
-    max-width: 100%; 
-    height: auto; 
-  }
-  .aboutme {
-    margin: 3rem 100px 100px 100px;
-    padding: 0;
-  }
-}
-
-@media (min-width: 599px) and (max-width: 800px) {
-  .About {
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-  }
-
-  .About img {
-    max-width: 100%; 
-    height: auto;
-    margin: 0;
-    padding: 0; 
-  }
-  .aboutme {
-    margin: 3rem 100px 100px 100px;
-    padding: 0;
-  }
-  .About .text {
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .About {
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-  }
-  .About .text {
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-  }
-
-  .About img {
-    max-width: 100%; 
-    height: auto; 
-  }
-  .aboutme {
-    margin: 3rem 50px 50px 50px;
-    padding: 0;
-  }
-}
-
-
-
     
-  /*resume page*/
-  
-  /*fish means boxed (inside joke name). fish represents the texts that are boxed for design purposes (also represents button)*/
 
-  .resumeFish a {
-      color: var(--hovercolor);
-      font-weight: bold;
-      text-decoration: none;
-      margin-bottom: 20px;
-
-      
-  }
-  .Page {
-    margin: 50px auto;
-    max-width: 1200px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-
-  .Resume {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 800px;
-    padding: 20px;
-    background-color: white;
-    border: 2px solid #36454F;
-    border-radius: 20px;
-  }
-
-  .Resume h1 {
-    border-bottom: 2px solid #36454F;
-    padding-top: 1em;
-    margin: 0;
-  }
-
-  .Resume h2 {
-    padding-top: 13px;
-    margin: 0;
-  }
-
-  .Resume h3 {
-    padding-top: 2px;
-    margin: 0;
-  }
-
-  .Resume h4 {
-    padding-top: 1px;
-    margin: 0;
-  }
-
-  .Resume p {
-    padding-top: 1px;
-    margin: 0;
-  }
-
-  .Resume ul {
-    padding-top: 2px;
-    margin: 0;
-  }
-
-  .Resume .viewButton {
-    width: 200px;
-  }
-
-  @media (max-width: 600px) {
-
-    .Resume {
-      margin: 7rem 15vw 5rem 15vw;
-    }
-
-    .resumeFish{
-      margin: 1em 0;
-    }
-
-  }
 
 
 /* CASE STUDY! */
@@ -915,7 +743,8 @@ footer {
 
 .thumbnail-image {
   border-radius: 30px;
-  margin: 10px;
+  margin: 10px auto;
+  max-width: 800px;
 }
 
 .caseStudy-overview-text  {
@@ -1496,3 +1325,8 @@ border-radius: 10px;
     padding: 0 50px;
   }
 }
+
+
+
+
+
