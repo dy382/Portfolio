@@ -4,157 +4,178 @@
   <head>  
     <title>Doyeon Yoo | Design</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" info="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/hm.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/svg" href="/images/Favicon.svg">
 </head>
+<body>
 
-<body>  
-  <nav class="navbar">
-    <div class="logo">
-      <a href="index.html"><h3>DY</h3></a>
-    </div>
-
-    <ul class="nav-bar">
-    <input type="checkbox" id="check">
-    <span class="menu">
-      <li><a href="projects.html" class="underline">Projects</a></li>
-      <li><a href="resume.html" class="underline">Resume</a></li>
-      <li><a href="about.html" class="underline">About</a></li>
-      <li><a href="design.html" id="currentPage" class="underline">Design</a></li>
-      <li><a href="photography.html" class="underline">Photos</a></li>   
-      <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-    </span>
-    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-  </ul>
-</nav>
-
-<div class="galleryflex">
-
-<!-- 1 -->  
-  <div class="gallery">
-    <div class="photocard">
-      <img src="./images/design/winged victory-2.jpg" alt="A bicycle in front of a purple sky">
-          <div class="info">
-            <h1>Winged Angel</h1>
-            <p>July 2024</p>
-            <p>Charcoal</p>
-          </div>
-    </div>
-    <div class="photocard">
-      <img src="./images/design/HW2.gif" alt="A man sitting on a Korean Temple">
-          <div class="info">
-            <h1>Name Retaliation</h1>
-            <p>ANIM-115, Winter 2025</p>
-            <p>Ball Emotion</p>
-          </div>
-    </div>
-    <div class="photocard">
-      <img src="./images/design/Cat Park.png" alt="The Sun on Townhouse Front">
-        <div class="info">
-          <a href="https://www.youtube.com/watch?v=8K8lMLDov7Y"><h1>Cat Park</h1></a>
-          <p>FMTV-115, Fall 2023</p>
-          <p>Portrait Focus</p>
+    <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><h3>DY</h3></a>
         </div>
+    
+        <ul class="nav-bar">
+        <input type="checkbox" id="check">
+        <span class="menu">
+          <li><a href="projects.html" class="underline">Projects</a></li>
+          <li><a href="resume.html" class="underline">Resume</a></li>
+          <li><a href="about.html" class="underline">About</a></li>
+          <li><a href="design.html" id="currentPage" class="underline">Design</a></li> 
+          <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+        </span>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </ul>
+    </nav>
+
+    
+    <main class="portfolio-layout">
+      
+      <!-- Side Navigation -->
+      <aside class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+          <li><button class="filter-btn active" data-filter="all">All</button></li>
+          <li><button class="filter-btn" data-filter="photography">Photography</button></li>
+          <li><button class="filter-btn" data-filter="fine-art">Fine Art</button></li>
+          <li><button class="filter-btn" data-filter="illustration">Digital Illustration</button></li>
+          <li><button class="filter-btn" data-filter="multimedia">Multimedia</button></li>
+        </ul>
+      </aside>
+  
+      <!-- Portfolio Grid -->
+      <section class="grid">
+  
+        <figure class="item fine-art">
+          <img data-src="images/Design/Fine Arts/Winged Victory of Samothrace.jpg" alt="Winged Victory of Samothrace Charcoal Drawing">
+          <figcaption>Winged Victory of Samothrace — 2024</figcaption>
+        </figure>
+
+        <figure class="item multimedia">
+          <img data-src="images/Design/Graphic Design/HW2.gif" alt="Name and Ball Animation">
+          <figcaption>Name Ball Animation — 2024</figcaption>
+        </figure>
+
+        <figure class="item photography">
+          <img data-src="images/Design/Photography/Seoul Alleyway.webp" alt="Seoul alleyway photograph">
+          <figcaption>Seoul Alleyway — 2024</figcaption>
+        </figure>
+        
+        <figure class="item photography">
+          <img data-src="images/Design/Photography/Philadelphia House.webp" alt="Philadelphia home photograph">
+          <figcaption>Philadelphia House — 2023</figcaption>
+        </figure>
+        
+        <figure class="item illustration">
+          <img data-src="images/Design/Digital Illustration/Bathroom.jpg" alt="Bathroom digital drawing, natural light">
+          <figcaption>Bathroom — 2025</figcaption>
+        </figure>
+
+        <figure class="item illustration">
+          <img data-src="images/Design/Digital Illustration/Portrait Contour.PNG" alt="Portrait contour, red gray scale">
+          <figcaption>Portrait Contour — 2025</figcaption>
+        </figure>
+
+        <figure class="item photography">
+          <img data-src="images/Design/Photography/Strawberry Stand.webp" alt="Strawberry stand photograph">
+          <figcaption>Strawberry Stand — 2023</figcaption>
+        </figure>
+
+        <figure class="item fine-art">
+          <img data-src="images/Design/Fine Arts/Chinese Restaurant.jpg" alt="Chinese Restaurant, pen and ink">
+          <figcaption>Chinese Restaurant — 2024</figcaption>
+        </figure>
+
+        <figure class="item illustration">
+          <img data-src="images/Design/Digital Illustration/Bedroom.PNG" alt="Bedroom digital drawing, natural light">
+          <figcaption>Bedroom — 2025</figcaption>
+        </figure>
+
+        <figure class="item illustration">
+          <img data-src="images/Design/Digital Illustration/Goddess Statue.PNG" alt="Goddess statue drawing, charcoal">
+          <figcaption>Goddess Statue — 2025</figcaption>
+        </figure>
+
+        <figure class="item photography">
+          <img data-src="images/Design/Photography/Under Seoul Bridge.webp" alt="Under Seoul bridge photograph">
+          <figcaption>Under Seoul Bridge — 2024</figcaption>
+        </figure>
+
+        <figure class="item illustration">
+          <img data-src="images/Design/Digital Illustration/Armored Knight on Horse.PNG" alt="Armored knight on horse, digital illustration">
+          <figcaption>Armored Knight on Horse — 2025</figcaption>
+        </figure>
+  
+        <figure class="item photography">
+          <img data-src="images/Design/Photography/Floating Bicycle.webp" alt="floating bicycle photograph">
+          <figcaption>Floating Bicycle — 2024</figcaption>
+        </figure>
+
+        <figure class="item illustration">
+          <img data-src="images/Design/Digital Illustration/Kitchen.jpg" alt="Kitchen digital drawing, natural light">
+          <figcaption>Kitchen — 2025</figcaption>
+        </figure>
+
+        <figure class="item illustration">
+          <img data-src="images/Design/Digital Illustration/Painting Copy.jpg" alt="painting copy, digital drawing">
+          <figcaption>Painting Copy — 2025</figcaption>
+        </figure>
+
+        <figure class="item photography">
+          <img data-src="images/Design/Photography/Boston Park.webp" alt="Boston park photograph">
+          <figcaption>Boston Park — 2023</figcaption>
+        </figure>
+
+        <figure class="item fine-art">
+          <img data-src="images/Design/Fine Arts/Bunny.jpg" alt="bunny drawing, charcoal">
+          <figcaption>Bunny — 2023</figcaption>
+        </figure>
+
+
+        <figure class="item fine-art">
+          <img data-src="images/Design/Fine Arts/Koi Fish.jpg" alt="Koi fish drawing, pen and ink on book">
+          <figcaption>Koi Fish in Book — 2024</figcaption>
+        </figure>
+        
+        <figure class="item fine-art">
+          <img data-src="images/Design/Fine Arts/Overlap.jpg" alt="Overlapping lines, first perspective pen drawing">
+          <figcaption>Overlap — 2022</figcaption>
+        </figure>
+
+        <figure class="item photography">
+          <img data-src="images/Design/Photography/Firewatch Tower.webp" alt="firewatch tower photograph">
+          <figcaption>Firewatch Tower — 2024</figcaption>
+        </figure>
+        
+        <figure class="item multimedia">
+          <img data-src="images/Design/Fine Arts/Perspective Ball Animation.gif" alt="2 point perspective drawing ball animation">
+          <figcaption>Ball Animation — 2022</figcaption>
+        </figure>
+
+        <figure class="item photography">
+          <img data-src="images/Design/Photography/Water Plant.webp" alt="water plant photograph">
+          <figcaption>Water Plant — 2025</figcaption>
+        </figure>
+        
+        <figure class="item photography">
+          <img data-src="images/Design/Photography/Korean Motorcyclist.webp" alt="Korean motorcyclist photograph">
+          <figcaption>Korean Motorcyclist — 2024</figcaption>
+        </figure>
+
+      </section>
+  
+    </main>
+  
+    <div class="lightbox" id="lightbox">
+      <img id="lightbox-img" alt="">
+      <p id="lightbox-caption"></p>
     </div>
-    <div class="photocard">
-      <img src="./images/design/bunny.jpg" alt="The Sun on Townhouse Front">
-        <div class="info">
-          <h1>Bunny</h1>
-          <p>VSST-110, Spring 2023</p>
-          <p>Charcoal</p>
-        </div>
-    </div>
-  </div>
+
   
 
-    <!-- 2 -->
-  <div class="gallery">
-    <div class="photocard">
-      <img src="./images/design/Pizza Dance.png" alt="A man sitting on a Korean Temple">
-          <div class="info">
-            <a href="https://www.youtube.com/watch?v=7pZcuUxiqAI"><h1>Pizza Dance</h1></a>
-            <p>FMTV-115, Fall 2023</p>
-            <p>Final</p>
-          </div>
-    </div>
-<!--     <div class="photocard">
-      <img src="./images/design/Photography7.webp" alt="On Boston's Central Park bridge">
-      <video controls>
-        <source src="./images/Design/IDM215-DoyeonYoo-TooGoodToGoFinalVideo.mp4" type="video/mp4">
-          <div class="info">
-            <h1>Heading</h1>
-            <p>Lorem ipsum dolor sit amet</p>
-          </div>
-    </div> -->
 
-    <div class="photocard">
-      <img src="./images/design/fish.jpg" alt="The Sun on Townhouse Front">
-        <div class="info">
-          <h1>Koi Fish</h1>
-          <p>Winter 2024</p>
-          <p>Pen</p>
-        </div>
-    </div>
-    <div class="photocard">
-      <img src="./images/design/spatial tracing.webp" alt="The Sun on Townhouse Front">
-        <div class="info">
-          <h1>Spatial Tracing</h1>
-          <p>VSST-109, Winter 2022</p>
-          <p>Photoshop</p>
-        </div>
-    </div>
-    <div class="photocard">
-      <img src="./images/design/Arcane Trailer.png" alt="The Sun on Townhouse Front">
-        <div class="info">
-          <a href="https://href.li/?https://youtu.be/oTSKMdfdu2E?si=JwmjsMdMHUhOQgcZ"><h1>Arcane Trailer</h1></a>
-          <p>FMTV-206 Final, Fall 2023</p>
-          <p>Audio Production</p>
-        </div>
-    </div>
-  </div>
-
-  <!-- 3 -->
-  <div class="gallery">
-    <div class="photocard">
-      <img src="./images/design/ChineseRestaurant.jpg" alt="A bicycle in front of a purple sky">
-          <div class="info">
-            <h1>Chinese Restaurant Sketch</h1>
-            <p>Fall 2023</p>
-            <p>pen and ink</p>
-          </div>
-    </div>
-    <div class="photocard">
-      <img src="./images/design/overlap.jpg" alt="A small Farm Truck">
-          <div class="info">
-            <h1>Overlap</h1>
-            <p>VSST-108, Fall 2022</p>
-            <p>Perspective Pen</p>
-          </div>
-    </div>
-
-    <div class="photocard">
-      <img src="./images/design/2022_Yoo_E_Perspective_Animation_P4.gif" alt="The Sun on Townhouse Front">
-        <div class="info">
-          <h1>Perspective Ball Bounce</h1>
-          <p>VSST-108, Fall 2022</p>
-          <p>Grayscale Painting + Photoshop</p>
-        </div>
-    </div>
-<!--     <div class="photocard">
-      <img src="./images/design/Mr. Fox Monologue.png" alt="A man sitting on a Korean Temple">
-          <div class="info">
-            <a href="https://www.youtube.com/watch?v=0V0ll3IdInU"><h1>Mr. Fox Monologue</h1></a>
-            <p>FMTV-206 Fall 2023</p>
-            <p>ADR + Foley</p>
-          </div>
-    </div> -->
-  </div>
-</div>
-
-
- 
 <!-- FOOTER -->
 <footer class="footer">
 
@@ -171,6 +192,8 @@
 
 </footer>
 
+<script src="filter.js"></script>
+<script src="reveal.js"></script>
   
   </body>
   </html>

@@ -35,3 +35,7 @@ img {
     .drawing {
       background-color: #FF2B27;
     }
+
+  .side-bar {
+    flex-direction: column;
+  }
