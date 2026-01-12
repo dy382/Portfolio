@@ -1,11 +1,11 @@
 /* Layout */
 .portfolio-layout {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 3rem;
-    padding: 3rem;
-  }
-  
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) 1fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+
   /* Sidebar */
   .sidebar h3 {
     font-size: 0.9rem;
@@ -40,9 +40,27 @@
   
 /* Masonry Grid */
 .grid {
+  column-gap: clamp(1rem, 3vw, 2rem);
   column-count: 3;
-  column-gap: 2rem;
 }
+.grid {
+  column-gap: clamp(1rem, 3vw, 2rem);
+  column-count: 3;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    column-count: 1;
+  }
+}
+
+
 
 /* Portfolio Item */
 .item {
@@ -75,38 +93,46 @@ figcaption {
 .item.hidden {
   opacity: 0;
   pointer-events: none;
-  height: 0;
-  margin: 0;
+  transform: scale(0.98);
 }
 
-  
+
+.sidebar {
+  position: sticky;
+  top: 6rem;
+  align-self: start;
+}
+
   /* Responsive */
   @media (max-width: 900px) {
     .portfolio-layout {
       grid-template-columns: 1fr;
     }
-  
+
     .sidebar {
-      display: flex;
-      gap: 1rem;
-      overflow-x: auto;
+      position: relative;
+      top: auto;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 1rem;
+    }
+  
+    .sidebar h3 {
+      display: none;
     }
   
     .sidebar ul {
       display: flex;
-      gap: 1.5rem;
+      gap: 1.25rem;
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
     }
-    
-    .grid {
-      column-count: 2;
+  
+    .sidebar li {
+      margin-bottom: 0;
+      white-space: nowrap;
     }
   }
   
-  @media (max-width: 600px) {
-    .grid {
-      column-count: 1;
-    }
-  }
 
   .lightbox {
     position: fixed;
