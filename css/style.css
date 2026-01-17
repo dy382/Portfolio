@@ -133,7 +133,7 @@ a {
 }
 
 p {
-    font-family: 'Overpass Mono', Georgia, sans-serif;
+    font-family: 'Overpass', Georgia, sans-serif;
     font-weight: 400;
 }
 
@@ -754,6 +754,7 @@ footer {
 
 .caseStudy-overview-text p {
   margin: 0 0 10px 0;
+  font-size: 18px;
 }
 
 .caseStudy-overview-text h2 {
@@ -767,7 +768,9 @@ footer {
 
 .caseStudy-overview {
   margin: 0 20px;
+  font-size: 18px;
 }
+
 
 #Roles {
   list-style-type: none;
@@ -821,7 +824,7 @@ hr {
 }
 
 .cs p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .txtimg {
