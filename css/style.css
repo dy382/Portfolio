@@ -849,6 +849,13 @@ hr {
   width: 33%;
 }
 
+.txttxt {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  align-items: center;
+}
+
 .pt {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 30px;
