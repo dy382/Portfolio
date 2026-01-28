@@ -259,7 +259,7 @@ margin: 16px 0;
   }
 
 .content img{
-  height: 80vh;
+  height: auto;
   width: auto;
 }
 }
