@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+<head>  
+    <title>Doyeon Yoo | Lennox Got Lunch</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/svg" href="/images/Favicon.svg">
+</head>
+
+<body>
+  <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"><h3>DY</h3></a>
+      </div>
+
+      <ul class="nav-bar">
+      <input type="checkbox" id="check">
+      <span class="menu">
+        <li><a href="projects.html" id="currentPage" class="underline">Projects</a></li>
+        <li><a href="resume.html" class="underline">Resume</a></li>
+        <li><a href="about.html" class="underline">About</a></li>
+        <li><a href="design.html" class="underline">Design</a></li>
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+      </span>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </ul>
+  </nav>
+<!-- 
+  se=single element (h1, h2, p, img)
+  cs=case study    
+  imgtxt=image text
+  txtimg=text image
+  imgimg=image image
+  imgimgimg = image image image
+  txttxt= text text
+  si=small image
+  pt=prototype
+
+-->
+<div class="caseStudy">
+
+  <!-- <nav aria-label="Breadcrumb" class="breadcrumb">
+    <ol>
+      <li><a href="#">Projects</a></li>
+      <li><span aria-current="page">Chubb Feature Redesign</span></li>
+    </ol>
+  </nav> -->
+
+  <h1>Transfer of Ownership Feature</h1>
+  <div class="caseStudy-thumbnail">
+
+    <div class="caseStudy-overview">
+      <h2>OVERVIEW</h2>
+      <p>During my 6 month internship at Chubb, I had the opportunity to work with Streamlabs, a water leak detection company. I was tasked with a new user facing feature that allowed the transfer of account ownership between customers and plumbing professionals.</p>
+    </div>
+
+        
+      <div class="caseStudy-overview-text">
+        <h2>Timeline:</h2>
+        <p>5 weeks</p>
+        <h2>Programs:</h2>
+        <p>Figma, FigJam, Jira, Slack</p>
+          <ul id = "Roles">
+            <li>Product Design</li>
+            <li>UX Research</li>
+            <li>User Testing</li>
+          </ul>
+      </div>
+
+  </div>
+
+  <img class="thumbnail-image" src="./images/Chubb/Streamlabs.webp">
+</div>
+
+
+<div class="cs se caseStudy-process contain">
+    <h2>Program Statement</h2>
+  <p>StreamLabs Mobile app users, including customers and plumbers, lacked a reliable way to transfer ownership of products and locations to a new owner. This gap, often resorting relying on sharing passwords or phones instead, created friction and confusion for users unaware of transfer status.  
+   </p>
+</div>
+  <div class="cs imgtxt txtimg si">
+    <img src="./images/Chubb/streamlabslogo.avif">
+  <div class="cs Goals">
+    <h2>Key Challenges</h2>
+  <ul>
+    <li>No clear process for transferring products and locations between users.</li>
+    <li>Limited visibility into whether a transfer was pending, completed, or revoked.</li>
+    <li>Uncertainty about how transfer decisions affected existing ownership and access.</li>
+    <li>An onboarding experience that did not fully account for the different needs of customers and plumbing professionals.</li>
+  </ul>
+  </div>
+  </div>
+
+<div class="cs se caseStudy-process contain">
+<hr/>
+  <h1>Designing for Three User Types</h1>
+  <h2>1. Old Homeowner</h2>
+  <h3>Initiating and managing the transfer.</h3>
+  <p>An old homeowner are users moving out or transferring ownership of a property with existing StreamLabs products. They needs to Initiate the ownership transfer, understand its impact, and track or revoke the request when needed. </p>
+
+  <h2>2. New Homeowner</h2>
+  <h3>Receiving ownership and gaining access.</h3>
+  <p>New homeowner are users moving into a property with existing StreamLabs products that are still linked to the previous owner. They need to Accept ownership, gain access to the products and locations, and understand the transfer status. </p>
+
+  <h2>3. Plumber</h2>
+  <h3>Supporting customers through ownership change.</h3>
+  <p>Plumbers installing StreamLabs products or helping customers manage products across different properties. They need to set up an account tailored to their professional role and help facilitate a smooth ownership handoff when needed. </p>
+
+
+</div>
+  <div class="cs se caseStudy-process contain">   
+<hr/>
+<h1>The Design Approach</h1>
+<p>I focused on making ownership transfers easier to understand by mapping out the transfer lifecycle, clarifying the consequences of each decision, and providing relevant updates at every major stage. </p>
+</div>
+
+<div class="cs se caseStudy-process contain">
+<h2>1. Designing the Transfer Flow</h2>
+<p>I created an end-to-end flow connecting the current owner and the new owner. The experience outlines the available actions and explains the impact of each transfer decision, helping users understand what happens before they proceed.</p>
+<p>The flow also accounts for different outcomes, including accepting, rejecting, revoking, and waiting on a transfer. By considering these scenarios, the design provides a more consistent experience for both parties. </p>
+<img src="./images/Chubb/Transfer of Ownership.png">
+</div>
+
+<div class="cs se caseStudy-process contain">
+<h2>2. Improving Status Visibility and Notifications </h2>
+<img src="./images/Chubb/Improving Status Visibility and Notifications.png">
+<p>To reduce uncertainty, I designed tailored transfer notifications and location statuses based on each user's situation.</p>
+<p>Rather than treating every transfer the same way, the experience communicates relevant information to users who are receiving a transfer, awaiting a decision, revoking a request, or rejecting one. Email notifications at major stages help keep users informed even when they are not actively using the app. </p>
+</div>
+
+<div class="cs se caseStudy-process contain">
+  <h2>3. Redesigning the Onboarding Experience</h2>
+  <p>I also redesigned the existing mobile onboarding flow to collect additional account details, including name, company name, and role. </p>
+  <p>Recognizing that plumbing professionals have different needs from general customers, I created distinct onboarding journeys for plumbers and installers. This approach helps tailor the experience to each user's role and establishes a clearer foundation for account setup and product management. </p>
+</div>
+<div class="cs si caseStudy-process contain">
+  <img src="./images/Chubb/Onboarding.png">  
+</div>
+
+    <div class="cs se caseStudy-process contain">   
+  
+<h2>The Outcome</h2>
+
+<p>The proposed experience creates a clearer and more transparent way to transfer ownership of StreamLabs products and locations. </p>
+
+  <p>By combining an end-to-end transfer flow, scenario-specific notifications, visible status updates, and role-based onboarding, the design aims to: </p>    
+  <ul>
+    <li>Reduce confusion by clarifying transfer decisions and their consequences. </li>
+    <li>Improve transparency by making ownership and transfer status easier to understand. </li>
+    <li>Support smoother handoffs between existing and new owners. </li>
+    <li>Create a more tailored experience for customers, plumbers, and installers. </li>
+  </ul>
+
+<p>The result is a more structured ownership transfer experience that gives users greater visibility and confidence throughout the process.</p>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="socials">
+  <a href="mailto:dy382@drexel.edu" class="underline">Email</a>
+  <a href="https://www.linkedin.com/in/doyeon-yoo/" target="_blank" class="underline">LinkedIn</a>
+  <a href="https://github.com/dy382" target="_blank" class="underline">GitHub</a>
+  <a href="https://www.instagram.com/yoo.doyeon/" target="_blank" class="underline">Instagram</a>
+  </div>
+
+  <div class="footer-text">
+    <h5>© Doyeon Yoo 2024</h5>
+  </div>
+
+</footer>
+
+</body>
