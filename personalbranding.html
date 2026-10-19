@@ -1,0 +1,616 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doyeon Yoo | Personal Brand Board</title>
+
+  <style>
+    :root {
+      --navy: #36454F;
+      --orange: #CE575A;
+      --green: #2E9E6B;
+      --cream: #FEF9EE;
+      --white: #FFFFFF;
+      --text: #36454F;
+      --muted: #656977;
+      --border: #E5DFD5;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #FAF8F4;
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 60px 7.5%;
+    }
+
+    .eyebrow {
+      margin-bottom: 20px;
+      color: var(--orange);
+      font-family: monospace;
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .brand-board {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      min-width: 0;
+      padding: 20px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    .card-title {
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-family: monospace;
+      font-size: 12px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Identity */
+
+    .identity {
+      grid-column: span 6;
+      grid-row: span 2;
+      min-height: 290px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 24px;
+      color: var(--cream);
+      background: var(--navy);
+      border-color: var(--navy);
+    }
+
+    .identity .card-title {
+      color: #B9BDCA;
+    }
+
+    .identity h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(36px, 4vw, 56px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+    }
+
+    .identity .role {
+      color: #D1D2D9;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .identity .website {
+      color: #B9BDCA;
+      font-family: monospace;
+      font-size: 13px;
+    }
+
+    /* Main content cards */
+
+    .uvp {
+      grid-column: span 6;
+    }
+
+    .uvp p {
+      font-size: 18px;
+    }
+
+    .audience,
+    .values {
+      grid-column: span 3;
+    }
+
+    .challenges,
+    .opportunities {
+      grid-column: span 3;
+    }
+
+    .palette {
+      grid-column: span 6;
+    }
+
+    .typography,
+    .imagery,
+    .voice {
+      grid-column: span 3;
+    }
+
+    .metrics {
+      grid-column: span 6;
+    }
+
+    .channels {
+      grid-column: span 3;
+    }
+
+    /* Color palette */
+
+    .swatches {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .swatch-color {
+      height: 52px;
+      margin-bottom: 7px;
+      border-radius: 9px;
+    }
+
+    .swatch span {
+      color: var(--muted);
+      font-family: monospace;
+      font-size: 11px;
+    }
+
+    /* Typography */
+
+    .font-sample {
+      margin-bottom: 5px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    .font-description {
+      font-size: 15px;
+    }
+
+    /* Imagery and mood */
+
+    .mood-board {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+    }
+
+    .mood {
+      height: 58px;
+      border-radius: 8px;
+    }
+
+    .mood-one {
+      background: linear-gradient(135deg, #F3DCC8, #CE575A);
+    }
+
+    .mood-two {
+      background: linear-gradient(135deg, #5693C6, #36454F);
+    }
+
+    .mood-three {
+      background: linear-gradient(135deg, #FEF9EE, #DCECE2);
+    }
+
+    /* Metrics and goals */
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .metric strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--orange);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+    }
+
+    .metric p {
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    /* Channels */
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .tag {
+      padding: 5px 10px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      font-size: 12px;
+    }
+
+    /* Footer */
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* Tablet */
+
+    @media (max-width: 1000px) {
+      .container {
+        padding: 40px 5%;
+      }
+
+      .identity {
+        grid-column: span 7;
+      }
+
+      .uvp {
+        grid-column: span 5;
+      }
+
+      .audience,
+      .values,
+      .challenges,
+      .opportunities,
+      .typography,
+      .imagery,
+      .voice,
+      .channels {
+        grid-column: span 4;
+      }
+
+      .palette,
+      .metrics {
+        grid-column: span 8;
+      }
+    }
+
+    /* Mobile */
+
+    @media (max-width: 650px) {
+      .container {
+        padding: 28px 16px;
+      }
+
+      .eyebrow {
+        font-size: 11px;
+        letter-spacing: 2px;
+      }
+
+      .brand-board {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .card {
+        padding: 16px;
+        border-radius: 13px;
+      }
+
+      .identity,
+      .uvp,
+      .palette,
+      .metrics {
+        grid-column: 1 / -1;
+      }
+
+      .identity {
+        min-height: 245px;
+      }
+
+      .identity h1 {
+        font-size: 42px;
+      }
+
+      .identity .role {
+        font-size: 16px;
+      }
+
+      .uvp p {
+        font-size: 16px;
+      }
+
+      .audience,
+      .values,
+      .challenges,
+      .opportunities,
+      .typography,
+      .imagery,
+      .voice,
+      .channels {
+        grid-column: span 1;
+      }
+
+      .card p {
+        font-size: 14px;
+      }
+
+      .swatch-color {
+        height: 40px;
+      }
+
+      .swatch span {
+        font-size: 9px;
+      }
+
+      .font-sample {
+        font-size: 24px;
+      }
+
+      .metrics-grid {
+        gap: 10px;
+      }
+
+      .metric strong {
+        font-size: 18px;
+      }
+
+      .metric p {
+        font-size: 12px;
+      }
+
+      footer {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .brand-board {
+        grid-template-columns: 1fr;
+      }
+
+      .identity,
+      .uvp,
+      .palette,
+      .metrics,
+      .audience,
+      .values,
+      .challenges,
+      .opportunities,
+      .typography,
+      .imagery,
+      .voice,
+      .channels {
+        grid-column: 1 / -1;
+      }
+    }
+  </style>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Doyeon Yoo | Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/idmproject.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="icon" type="image/svg" href="/images/Favicon.svg">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="logo">
+    <a href="index.html"><h3>DY</h3></a>
+  </div>
+
+  <ul class="nav-bar">
+    <input type="checkbox" id="check">
+    <span class="menu">
+      <li><a href="projects.html" class="underline">Projects</a></li>
+      <li><a href="resume.html" class="underline">Resume</a></li>
+      <li><a href="about.html" class="underline">About</a></li>
+      <li><a href="design.html" class="underline">Design</a></li>
+      <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+    </span>
+    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+  </ul>
+</nav>
+
+</head>
+
+<body>
+  <main class="container">
+
+    <p class="eyebrow">
+      Personal Brand Board · Doyeon Yoo
+    </p>
+
+    <section class="brand-board">
+
+      <!-- Identity -->
+      <article class="card identity">
+        <div>
+          <h2 class="card-title">Identity</h2>
+        </div>
+
+        <div>
+          <h1>Doyeon Yoo</h1>
+          <p class="role">
+            UX / Product Designer · Human-centered digital experiences
+          </p>
+        </div>
+
+        <p class="website">
+          thoughtful design · meaningful experiences
+        </p>
+      </article>
+
+      <!-- Unique Value Proposition -->
+      <article class="card uvp">
+        <h2 class="card-title">Unique Value Proposition</h2>
+        <p>
+          I turn complex problems into clear, approachable digital
+          experiences by combining user research, purposeful visual
+          design, and an understanding of how people interact with products.
+        </p>
+      </article>
+
+      <!-- Target Audience -->
+      <article class="card audience">
+        <h2 class="card-title">Target Audience</h2>
+        <p>
+          Product teams, design collaborators, and organizations creating
+          useful, inclusive digital experiences.
+        </p>
+      </article>
+
+      <!-- Values -->
+      <article class="card values">
+        <h2 class="card-title">Values</h2>
+        <p>
+          Empathy · Curiosity · Clarity · Collaboration
+        </p>
+      </article>
+
+      <!-- Challenges -->
+      <article class="card challenges">
+        <h2 class="card-title">Challenges</h2>
+        <p>
+          Balancing user needs, business goals, and technical constraints
+          while keeping experiences intuitive.
+        </p>
+      </article>
+
+      <!-- Opportunities -->
+      <article class="card opportunities">
+        <h2 class="card-title">Opportunities</h2>
+        <p>
+          Use research, iteration, and collaboration to make everyday
+          digital experiences better.
+        </p>
+      </article>
+
+      <!-- Color Palette -->
+      <article class="card palette">
+        <h2 class="card-title">Palette</h2>
+
+        <div class="swatches">
+          <div class="swatch">
+            <div class="swatch-color" style="background:#36454F"></div>
+            <span>#36454F</span>
+          </div>
+
+          <div class="swatch">
+            <div class="swatch-color" style="background:#CE575A"></div>
+            <span>#CE575A</span>
+          </div>
+
+          <div class="swatch">
+            <div class="swatch-color" style="background:#5693C6"></div>
+            <span>#5693C6</span>
+          </div>
+
+          <div class="swatch">
+            <div class="swatch-color" style="background:#FEF9EE"></div>
+            <span>#FEF9EE</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Typography -->
+      <article class="card typography">
+        <h2 class="card-title">Typography</h2>
+        <div class="font-sample">Thoughtful.</div>
+        <p class="font-description">
+          Georgia for headlines<br>
+          Arial for body text
+        </p>
+      </article>
+
+      <!-- Imagery -->
+      <article class="card imagery">
+        <h2 class="card-title">Imagery / Mood</h2>
+        <div class="mood-board">
+          <div class="mood mood-one"></div>
+          <div class="mood mood-two"></div>
+          <div class="mood mood-three"></div>
+        </div>
+      </article>
+
+      <!-- Voice -->
+      <article class="card voice">
+        <h2 class="card-title">Voice</h2>
+        <p>
+          Warm · Curious · Clear · Collaborative
+        </p>
+      </article>
+
+      <!-- Goals -->
+      <article class="card metrics">
+        <h2 class="card-title">Experience & Goals</h2>
+
+        <div class="metrics-grid">
+          <div class="metric">
+            <strong>Research</strong>
+            <p>
+              Understand people and identify meaningful problems.
+            </p>
+          </div>
+
+          <div class="metric">
+            <strong>Systems</strong>
+            <p>
+              Create consistent, intuitive design patterns.
+            </p>
+          </div>
+
+          <div class="metric">
+            <strong>Iteration</strong>
+            <p>
+              Prototype, test, learn, and improve.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Channels -->
+      <article class="card channels">
+        <h2 class="card-title">Channels</h2>
+        <div class="tags">
+          <span class="tag">Portfolio</span>
+          <span class="tag">LinkedIn</span>
+          <span class="tag">Figma</span>
+          <span class="tag">Case Studies</span>
+        </div>
+      </article>
+
+    </section>
+
+    <footer>
+      <p>
+        A personal brand built around thoughtful, human-centered design.
+      </p>
+      <p>DESIGN · RESEARCH · ITERATION</p>
+    </footer>
+
+  </main>
+</body>
+</html>
