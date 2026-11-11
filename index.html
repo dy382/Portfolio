@@ -6,36 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-  <link rel="icon" type="image/svg" href="/images/Favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="./images/Favicon.svg">
 </head>
 
 <body>
 
 <!-- NAV -->
 <nav class="navbar">
-  <div class="logo">
-    <a href="index.html"><h3>DY</h3></a>
-  </div>
+    <div class="logo">
+      <a href="index.html"><h3>Doyeon Yoo</h3></a>
+    </div>
 
-  <ul class="nav-bar">
-    <input type="checkbox" id="check">
-    <span class="menu">
-      <li><a href="projects.html" class="underline">Projects</a></li>
-      <li><a href="resume.html" class="underline">Resume</a></li>
-      <li><a href="about.html" class="underline">About</a></li>
-      <li><a href="design.html" class="underline">Design</a></li>
-      <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-    </span>
-    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-  </ul>
-</nav>
+    <ul class="nav-bar">
+      <input type="checkbox" id="check">
+      <span class="menu">
+      <li><a class="underline" href="projects.html" id="currentPage">Projects</a></li>
+      <li><a class="underline" href="about.html">About</a></li>
+      <li><a class="underline" href="resume.html">Resume</a></li>
+      <li><a class="underline" href="design.html">Photography</a></li>
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+      </span>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </ul>
+  </nav>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-text">
     <p class="eyebrow">UX/UI Designer</p>
-    <h1>Hello! I'm Doyeon.</h1>
-    <p class="hero-sub">I’m a UI/UX designer passionate about crafting intuitive digital experiences, currently studying at Drexel University.</p>
+    <h1>Hello, my name is Doyeon.</h1>
+    <p class="hero-sub">Philadelphia based UX/UI designer and freelance portrait photographer currently attending Drexel University. I love art, user psychology, and functionality.</p>
   </div>
   <div class="hero-art">
     <img src="./images/homepage.png" alt="Jellyfish illustration">
@@ -50,18 +50,6 @@
   </div>
 
   <div class="project-grid">
-
-    <!-- 
-      <a class="project-card" href="chubb.html">
-        <span class="thumb"><img src="./images/Chubb/StreamLabs (1400 x 1080 px).png" alt="Streamlabs transfer of ownership thumbnail" loading="lazy"></span>
-        <ul class="tags">
-          <li>Mobile App</li>
-          <li>UX Research</li>
-        </ul>
-        <h3>Transfer of Ownership</h3>
-      </a>
-    -->
-
       <a class="project-card" href="lennoxGotLunch.html">
         <span class="thumb"><img src="./images/LennoxGotLunch/lennoxgotlunch-thumbnail.png" alt="Lennox Got Lunch thumbnail" loading="lazy"></span>
         <ul class="tags">
@@ -91,31 +79,35 @@
         <h3>ChessRookie</h3>
       </a>
 
+      <a class="project-card" href="chubb.html">
+        <span class="thumb"><img src="./images/Chubb/StreamLabs (1400 x 1080 px).png" alt="Streamlabs transfer of ownership thumbnail" loading="lazy"></span>
+        <ul class="tags">
+          <li>Mobile App</li>
+          <li>UX Research</li>
+        </ul>
+        <h3>Transfer of Ownership</h3>
+      </a>
   </div>
 </section>
 
-
-  <footer class="footer">
-    <div class="footer-inner">
-      <div>
-        <p class="footer-brand">Doyeon Yoo</p>
-        <div class="socials">
-          <a href="https://www.linkedin.com/in/doyeon-yoo/" target="_blank" class="underline">LinkedIn</a>
-          <a href="https://www.instagram.com/yoo.doyeon/" target="_blank" class="underline">Instagram</a>
-          <a href="https://github.com/dy382" target="_blank" class="underline">GitHub</a>
-          <a href="mailto:dy382@drexel.edu" class="underline">Email</a>
-        </div>
-      </div>
-      <div class="footer-nav">
-        <a href="resume.html" class="underline">Projects</a>
-        <a href="resume.html" class="underline">Resume</a>
-        <a href="about.html" class="underline">About</a>
-        <a href="design.html" class="underline">Design</a>
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand">Doyeon Yoo</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/doyeon-yoo/" target="_blank" class="underline">LinkedIn</a>
+        <a href="https://www.instagram.com/yoo.doyeon/" target="_blank" class="underline">Instagram</a>
+        <a href="https://github.com/dy382" target="_blank" class="underline">GitHub</a>
+        <a href="mailto:dy382@drexel.edu" class="underline">Email</a>
       </div>
     </div>
-  </footer>
-  
-
+    <div class="footer-nav">
+      <a href="about.html" class="underline">About</a>
+      <a href="resume.html" class="underline">Resume</a>
+      <a href="design.html" class="underline">Photography</a>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
