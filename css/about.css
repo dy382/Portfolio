@@ -1,0 +1,40 @@
+.headshot img {
+    max-width: 250px;
+    border-radius: 20px;
+    border: 1px solid #36454F;
+}
+
+.headshot {
+    padding: 30px;
+    background-color: #CE575A;
+    margin: 30px;
+    border-radius: 20px;
+    border: 1px solid #36454F;
+}
+
+.description {
+        margin: 30px;
+
+}
+
+.Page {
+    margin: 50px auto;
+    max-width: 1000px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+@media (max-width: 700px) {
+    .Page {
+        margin: 50px auto;
+        max-width: 500px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+}
